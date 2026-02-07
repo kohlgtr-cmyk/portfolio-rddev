@@ -38,6 +38,10 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
+
+}
+.logo a {
+  text-decoration: none;
 }
 
 .logo-img {
