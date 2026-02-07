@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Completo | RDDev Web Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">RD<span>Dev</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Serviços</a></li>
+                <li><a href="portfolio.html">Projetos</a></li>
+                <li><a href="index.html#skills">Habilidades</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1>Nosso <span>Portfólio</span></h1>
+            <p>Explore nossa coleção de projetos e veja como transformamos ideias em soluções digitais de sucesso</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="portfolio-filters-section">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Buscar projetos por nome, cliente ou palavra-chave...">
+            </div>
+
+            <!-- Advanced Filters -->
+            <div class="filters-row">
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <label>Categoria</label>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="category" data-value="all">Todos</button>
+                        <button class="filter-btn" data-filter="category" data-value="web">Websites</button>
+                        <button class="filter-btn" data-filter="category" data-value="ecommerce">E-commerce</button>
+                        <button class="filter-btn" data-filter="category" data-value="system">Sistemas</button>
+                        <button class="filter-btn" data-filter="category" data-value="mobile">Mobile</button>
+                    </div>
+                </div>
+
+                <!-- Technology Filter -->
+                <div class="filter-group">
+                    <label>Tecnologia</label>
+                    <select title="filter" id="techFilter" class="filter-select">
+                        <option value="all">Todas as tecnologias</option>
+                        <option value="react">React</option>
+                        <option value="vue">Vue.js</option>
+                        <option value="angular">Angular</option>
+                        <option value="node">Node.js</option>
+                        <option value="laravel">Laravel</option>
+                        <option value="react-native">React Native</option>
+                        <option value="flutter">Flutter</option>
+                    </select>
+                </div>
+
+                <!-- Year Filter -->
+                <div class="filter-group">
+                    <label>Ano</label>
+                    <select title="filter" id="yearFilter" class="filter-select">
+                        <option value="all">Todos os anos</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+
+                <!-- Clear Filters -->
+                <button class="clear-filters" id="clearFilters">✕ Limpar Filtros</button>
+            </div>
+
+            <!-- Results Count -->
+            <div class="results-info">
+                <span id="resultsCount">Mostrando <strong>9</strong> de <strong>24</strong> projetos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+
+            <!-- Loading Indicator -->
+            <div class="loading-indicator" id="loadingIndicator">
+                <div class="spinner"></div>
+                <p>Carregando mais projetos...</p>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>Nenhum projeto encontrado</h3>
+                <p>Tente ajustar os filtros ou buscar por outros termos</p>
+                <button class="btn btn-primary" id="resetSearch">Limpar Busca</button>
+            </div>
+
+            <!-- End Message -->
+            <div class="end-message" id="endMessage" style="display: none;">
+                <p>✨ Você viu todos os nossos projetos!</p>
+                <a href="index.html#contact" class="btn btn-primary">Vamos criar algo juntos?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>RDDev</h3>
+                <p>Excelência em desenvolvimento web e mobile. Transformando ideias em soluções digitais de alto impacto.</p>
+                <div class="social-links">
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#" title="GitHub">💻</a>
+                    <a href="#" title="WhatsApp">💬</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="index.html#services">Websites</a></li>
+                    <li><a href="index.html#services">Apps Mobile</a></li>
+                    <li><a href="index.html#services">E-commerce</a></li>
+                    <li><a href="index.html#services">Sistemas Web</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="index.html#about">Sobre Nós</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="index.html#testimonials">Depoimentos</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="mailto:contato@rddev.com.br">Email</a></li>
+                    <li><a href="tel:11999999999">Telefone</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RDDev Web Solutions. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/portfolio-data.js"></script>
+    <script src="/js/portfolio.js"></script>
+</body>
+</html>
