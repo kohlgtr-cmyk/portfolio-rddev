@@ -483,6 +483,103 @@ body {
             gap: 1rem;
         }
 
+/* Skills Section */
+/* Container das categorias (O Grid) */
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 2rem; /* Espaço entre os cards */
+    margin-top: 3rem;
+}
+
+/* O Card Individual */
+.skill-category {
+    background: #ffffff;          /* Fundo branco para destacar do fundo cinza do site */
+    padding: 2.5rem;              /* Espaço interno para o conteúdo não colar na borda */
+    border-radius: 16px;          /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra suave para dar profundidade */
+    border: 1px solid rgba(0,0,0,0.03); /* Borda muito sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Prepara animação de hover */
+}
+
+/* Efeito ao passar o mouse sobre o Card */
+.skill-category:hover {
+    transform: translateY(-7px);  /* O card "flutua" para cima */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* A sombra aumenta */
+}
+
+/* Ajuste do Título dentro do Card */
+.skill-category h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.5rem;
+    color: #0a1929;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(74, 144, 226, 0.2);
+    text-align: center; /* Centraliza o título do card */
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+    .skills-categories {
+        grid-template-columns: 1fr; /* Vira 1 coluna no celular */
+        gap: 1.5rem;
+    }
+    
+    .skill-category {
+        padding: 1.5rem; /* Menos espaçamento interno no celular */
+    }
+}
+.skill-category h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.5rem;
+    color: #0a1929;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(74, 144, 226, 0.2);
+}
+
+.skill-item {
+    margin-bottom: 2rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: #0a1929;
+    font-size: 1rem;
+}
+
+.skill-level {
+    font-size: 0.85rem;
+    color: #4a90e2;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skill-bar {
+    height: 12px;
+    background: #e9ecef;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #4a90e2, #5fc3e4);
+    border-radius: 6px;
+    width: 0; /* Começa em 0 para a animação funcionar */
+    transition: width 1.5s ease-out;
+}
+
         /* Testimonials */
         .testimonials {
             padding: 8rem 5%;
@@ -937,3 +1034,69 @@ body {
             opacity: 1;
             transform: translateY(0);
         }
+
+        @keyframes fillBar {
+    from {
+        width: 0 !important;
+    }
+}
+
+/* Filtros de Projetos */
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.8rem;
+    border: none;
+    background: #ffffff;
+    color: #0a1929;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    background: #4a90e2;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Classe que o JS adiciona ao botão clicado */
+.filter-btn.active {
+    background: #4a90e2;
+    color: white;
+    box-shadow: 0 4px 20px rgba(74, 144, 226, 0.3);
+}
+
+/* Ajuste nos cards para a animação de filtro */
+.project-card {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Centralização do Botão de Portfólio */
+/* Isso força o container do botão a ignorar qualquer grid ou float anterior */
+.projects-cta {
+    clear: both !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 40px 0 !important;
+    :hover {
+        color: $blue-accent;
+    }
+}
+
+.projects-cta .btn-primary {
+    display: inline-block !important; /* Faz o text-align: center funcionar */
+    margin: 0 auto !important;
+    float: none !important; /* Remove qualquer empurrão para a esquerda */
+}
