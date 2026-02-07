@@ -66,7 +66,6 @@ body {
         }
 
         .nav-links a {
-            color: $text-dark;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.95rem;
@@ -94,6 +93,40 @@ body {
             width: 100%;
         }
 
+        .nav-link {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+            align-items: center;
+        
+            color: $text-dark;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $blue-accent;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link a:hover {
+            color: $blue-accent;
+        }
+
+        .nav-link a:hover::after {
+            width: 100%;
+        }
+
         .nav-cta {
             padding: 0.8rem 2rem;
             background: $navy-dark;
@@ -107,7 +140,6 @@ body {
         }
 
         .nav-cta:hover {
-            background: $blue-accent;
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(74, 144, 226, 0.3);
         }

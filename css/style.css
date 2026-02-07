@@ -38,10 +38,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-
-}
-.logo a {
-  text-decoration: none;
 }
 
 .logo-img {
@@ -69,7 +65,6 @@ nav {
 }
 
 .nav-links a {
-  color: #1a1a1a;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -97,6 +92,39 @@ nav {
   width: 100%;
 }
 
+.nav-link {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  align-items: center;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4a90e2;
+  transition: width 0.3s ease;
+}
+
+.nav-link a:hover {
+  color: #4a90e2;
+}
+
+.nav-link a:hover::after {
+  width: 100%;
+}
+
 .nav-cta {
   padding: 0.8rem 2rem;
   background: #0a1929;
@@ -110,13 +138,8 @@ nav {
 }
 
 .nav-cta:hover {
-  background: #4a90e2;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(74, 144, 226, 0.3);
-}
-
-.nav-cta::after {
-  display: none;
 }
 
 /* Hero Section */
@@ -365,60 +388,24 @@ nav {
   font-size: 1rem;
 }
 
-/* Projects Section - MELHORADO */
+/* Projects Section */
 .projects {
   padding: 8rem 5%;
   background: #efefef;
-}
-
-.project-filters {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 4rem;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  padding: 0.8rem 2rem;
-  background: #f8f9fa;
-  border: 2px solid #e0e0e0;
-  border-radius: 25px;
-  color: #4a4a4a;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.filter-btn:hover {
-  border-color: #4a90e2;
-  color: #4a90e2;
-}
-
-.filter-btn.active {
-  background: #4a90e2;
-  border-color: #4a90e2;
-  color: #fff;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  margin-bottom: 5rem;
 }
 
 .project-card {
-  background: #fff;
+  background: #efefef;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   transition: all 0.4s ease;
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .project-card:hover {
@@ -479,22 +466,6 @@ nav {
   margin-bottom: 1.5rem;
 }
 
-.project-tech {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.5rem;
-}
-
-.tech-badge {
-  padding: 0.4rem 1rem;
-  background: #f8f9fa;
-  color: #4a4a4a;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
 .project-link {
   color: #4a90e2;
   text-decoration: none;
@@ -508,93 +479,6 @@ nav {
 
 .project-link:hover {
   gap: 1rem;
-}
-
-.projects-cta {
-  text-align: center;
-  padding: 3rem;
-  background: #f8f9fa;
-  border-radius: 10px;
-}
-
-.projects-cta p {
-  font-size: 1.2rem;
-  color: #4a4a4a;
-  margin-bottom: 1.5rem;
-}
-
-/* Skills Section - NOVA */
-.skills {
-  padding: 8rem 5%;
-  background: #f8f9fa;
-}
-
-.skills-categories {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-}
-
-.skill-category {
-  background: #fff;
-  padding: 3rem;
-  border-radius: 10px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-}
-
-.skill-category h3 {
-  font-family: "Libre Baskerville", serif;
-  font-size: 1.8rem;
-  color: #0a1929;
-  margin-bottom: 2rem;
-  font-weight: 700;
-}
-
-.skills-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.skill-name {
-  font-weight: 600;
-  color: #0a1929;
-  font-size: 1rem;
-}
-
-.skill-level {
-  font-size: 0.85rem;
-  color: #4a90e2;
-  font-weight: 600;
-}
-
-.skill-bar {
-  width: 100%;
-  height: 8px;
-  background: #e0e0e0;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background: linear-gradient(90deg, #4a90e2, #5fc3e4);
-  border-radius: 10px;
-  transition: width 1.5s ease-out;
-  width: 0;
 }
 
 /* Testimonials */
@@ -685,7 +569,7 @@ nav {
 /* About Section */
 .about {
   padding: 8rem 5%;
-  background: #efefef;
+  background: #f8f9fa;
 }
 
 .about-grid {
@@ -764,7 +648,7 @@ nav {
 /* Contact Section */
 .contact {
   padding: 8rem 5%;
-  background: #f8f9fa;
+  background: #efefef;
 }
 
 .contact-grid {
@@ -822,10 +706,9 @@ nav {
 }
 
 .contact-form {
-  background: #fff;
+  background: #f8f9fa;
   padding: 3rem;
   border-radius: 10px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .form-row {
@@ -853,12 +736,12 @@ nav {
 .form-group select,
 .form-group textarea {
   padding: 1rem 1.2rem;
-  background: #f8f9fa;
+  background: #efefef;
   border: 2px solid rgba(74, 144, 226, 0.2);
   border-radius: 5px;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  color: #1a1a1a;
+  color: var(--text-dark);
   transition: all 0.3s ease;
 }
 
@@ -983,18 +866,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Responsive */
 @media (max-width: 1024px) {
   .hero-container,
@@ -1003,8 +874,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .services-grid,
-  .skills-categories {
+  .services-grid {
     grid-template-columns: 1fr;
   }
   .projects-grid,
@@ -1015,7 +885,6 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -1042,23 +911,15 @@ footer {
   .hero-buttons {
     flex-direction: column;
   }
-  .project-filters {
-    gap: 0.5rem;
-  }
-  .filter-btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.8rem;
-  }
+}
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  .section-header h2 {
-    font-size: 1.8rem;
-  }
-  .btn {
-    padding: 1rem 2rem;
-  }
-}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=style.css.map */
