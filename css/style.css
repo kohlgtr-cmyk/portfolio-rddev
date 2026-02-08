@@ -424,6 +424,15 @@ nav {
   font-size: 5rem;
   position: relative;
   overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.project-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
 }
 
 .project-image::after {
@@ -1084,4 +1093,15 @@ footer {
   display: inline-block !important; /* Faz o text-align: center funcionar */
   margin: 0 auto !important;
   float: none !important; /* Remove qualquer empurrão para a esquerda */
+}
+
+.tech-badge {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #4a90e2;
+  color: #1a2c42;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

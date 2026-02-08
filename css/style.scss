@@ -425,6 +425,13 @@ body {
             font-size: 5rem;
             position: relative;
             overflow: hidden;
+            object-fit: contain;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                z-index: 1;
+            }
         }
 
         .project-image::after {
@@ -1099,4 +1106,15 @@ body {
     display: inline-block !important; /* Faz o text-align: center funcionar */
     margin: 0 auto !important;
     float: none !important; /* Remove qualquer empurrão para a esquerda */
+}
+
+.tech-badge {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: $blue-accent;
+    color: $navy-medium;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
 }
