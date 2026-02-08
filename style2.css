@@ -1104,98 +1104,14 @@ footer {
   border-radius: 25px;
   font-size: 12px;
   font-weight: 600;
-}
-
-/* Card de Garantia */
-.garantia-card-container {
-  position: relative;
-}
-
-.garantia-card {
-  background: linear-gradient(135deg, #0a1929 0%, #1a2c42 100%);
-  border: 2px solid #4a90e2;
-  border-radius: 20px;
-  padding: 3rem;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 20px 60px #5fc3e4;
-}
-
-.garantia-badge {
-  position: absolute;
-  top: -15px;
-  right: 30px;
-  background: #4a90e2;
-  color: #0a1929;
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
-  font-weight: 700;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.garantia-badge i {
-  margin-right: 0.5rem;
-}
-
-.garantia-icon {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, #4a4a4a 0%, #8a8a8a 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 2rem;
-  box-shadow: 0 10px 30px #5fc3e4;
-}
-
-.garantia-icon i {
-  font-size: 3rem;
-  color: #4a90e2;
-}
-
-.garantia-title h3 {
-  font-family: "Libre Baskerville", serif;
-  font-size: 3rem;
-  color: #4a90e2;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-.garantia-title p {
-  font-size: 1.2rem;
-  color: #f8f9fa;
-  margin-bottom: 2.5rem;
-}
-
-.garantia-lista {
-  text-align: left;
-  padding-top: 2rem;
-  border-top: 1px solid #f8f9fa;
-}
-
-.garantia-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.8rem 0;
-  color: #efefef;
-  font-size: 1rem;
-}
-
-.garantia-item i {
-  color: #4a90e2;
-  font-size: 1.2rem;
-}
-
+}/*# sourceMappingURL=style.css.map */
 /* ========================================
    SEÇÃO PÓS-ENTREGA / GARANTIA
 ======================================== */
+
 .pos-entrega {
   padding: 8rem 5%;
-  background: #0a1929;
+  background: #0a0a0a;
   position: relative;
   overflow: hidden;
 }
@@ -1207,7 +1123,7 @@ footer {
   right: 0;
   width: 50%;
   height: 100%;
-  background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 183, 77, 0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1224,7 +1140,7 @@ footer {
 
 .section-tag-gold {
   display: inline-block;
-  color: #4a90e2;
+  color: #FFB74D;
   font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -1235,19 +1151,19 @@ footer {
 .pos-entrega-content h2 {
   font-family: "Libre Baskerville", serif;
   font-size: 3rem;
-  color: #efefef;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
 .highlight-gold {
-  color: #4a90e2;
+  color: #FFB74D;
 }
 
 .intro-text {
   font-size: 1.1rem;
-  color: #efefef;
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.9;
   margin-bottom: 3rem;
 }
@@ -1263,28 +1179,22 @@ footer {
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem;
-  background: #1a2c42;
-  border: 1px solid #4a90e2;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 183, 77, 0.2);
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
 .beneficio-card:hover {
-  background: #0a1929;
-  border-color: #4a90e2;
+  background: rgba(255, 183, 77, 0.1);
+  border-color: #FFB74D;
   transform: translateY(-5px);
-}
-.beneficio-card:hover p {
-  color: #efefef;
-}
-.beneficio-card:hover h4 {
-  color: #4a90e2;
 }
 
 .beneficio-icon {
   width: 50px;
   height: 50px;
-  background: #0a1929;
+  background: rgba(255, 183, 77, 0.2);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -1294,19 +1204,137 @@ footer {
 
 .beneficio-icon i {
   font-size: 1.5rem;
-  color: #4a90e2;
+  color: #FFB74D;
 }
 
 .beneficio-info h4 {
   font-size: 1.1rem;
-  color: #efefef;
+  color: #ffffff;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .beneficio-info p {
   font-size: 0.95rem;
-  color: #8a8a8a;
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.6;
   margin: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* Card de Garantia */
+.garantia-card-container {
+  position: relative;
+}
+
+.garantia-card {
+  background: linear-gradient(135deg, rgba(255, 183, 77, 0.1) 0%, rgba(255, 183, 77, 0.05) 100%);
+  border: 2px solid rgba(255, 183, 77, 0.3);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(255, 183, 77, 0.2);
+}
+
+.garantia-badge {
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  background: #FFB74D;
+  color: #0a0a0a;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.garantia-badge i {
+  margin-right: 0.5rem;
+}
+
+.garantia-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #FFB74D 0%, #FFA726 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 30px rgba(255, 183, 77, 0.3);
+}
+
+.garantia-icon i {
+  font-size: 3rem;
+  color: #0a0a0a;
+}
+
+.garantia-title h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 3rem;
+  color: #FFB74D;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.garantia-title p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2.5rem;
+}
+
+.garantia-lista {
+  text-align: left;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 183, 77, 0.2);
+}
+
+.garantia-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+.garantia-item i {
+  color: #FFB74D;
+  font-size: 1.2rem;
+}
+
+/* Responsive - Pós-Entrega */
+@media (max-width: 1024px) {
+  .pos-entrega-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pos-entrega {
+    padding: 5rem 5%;
+  }
+
+  .pos-entrega-content h2 {
+    font-size: 2rem;
+  }
+
+  .garantia-card {
+    padding: 2rem;
+  }
+
+  .garantia-title h3 {
+    font-size: 2.5rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+}

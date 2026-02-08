@@ -1118,3 +1118,209 @@ body {
     font-size: 12px;
     font-weight: 600;
 }
+
+/* Card de Garantia */
+.garantia-card-container {
+  position: relative;
+}
+
+.garantia-card {
+  background: linear-gradient(135deg, $navy-dark 0%, $navy-medium 100%);
+  border: 2px solid $blue-accent;
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 60px $cyan-accent;
+}
+
+.garantia-badge {
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  background: $blue-accent;
+  color: $navy-dark;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.garantia-badge i {
+  margin-right: 0.5rem;
+}
+
+.garantia-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, $text-medium 0%, $text-light 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 30px $cyan-accent;
+}
+
+.garantia-icon i {
+  font-size: 3rem;
+  color: $blue-accent;
+}
+
+.garantia-title h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 3rem;
+  color: $blue-accent;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.garantia-title p {
+  font-size: 1.2rem;
+  color: $off-white;
+  margin-bottom: 2.5rem;
+}
+
+.garantia-lista {
+  text-align: left;
+  padding-top: 2rem;
+  border-top: 1px solid $off-white;
+}
+
+.garantia-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  color: $white;
+  font-size: 1rem;
+}
+
+.garantia-item i {
+  color: $blue-accent;
+  font-size: 1.2rem;
+}
+
+/* ========================================
+   SEÇÃO PÓS-ENTREGA / GARANTIA
+======================================== */
+
+.pos-entrega {
+  padding: 8rem 5%;
+  background: $navy-dark;
+  position: relative;
+  overflow: hidden;
+}
+
+.pos-entrega::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, $text-dark 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.pos-entrega-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section-tag-gold {
+  display: inline-block;
+  color: $blue-accent;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.pos-entrega-content h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 3rem;
+  color: $white;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.highlight-gold {
+  color: $blue-accent;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: $white;
+  line-height: 1.9;
+  margin-bottom: 3rem;
+}
+
+/* Grid de Benefícios */
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.beneficio-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: $navy-medium;
+  border: 1px solid $blue-accent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.beneficio-card:hover {
+  background: $navy-dark;
+  border-color: $blue-accent;
+  transform: translateY(-5px);
+  p {
+    color: $white;
+  }
+  h4 {
+    color: $blue-accent;
+  }
+}
+
+.beneficio-icon {
+  width: 50px;
+  height: 50px;
+  background: $navy-dark;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.beneficio-icon i {
+  font-size: 1.5rem;
+  color: $blue-accent;
+}
+
+.beneficio-info h4 {
+  font-size: 1.1rem;
+  color: $white;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.beneficio-info p {
+  font-size: 0.95rem;
+  color: $text-light;
+  line-height: 1.6;
+  margin: 0;
+}
