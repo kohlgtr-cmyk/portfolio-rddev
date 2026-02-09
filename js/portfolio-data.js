@@ -44,107 +44,104 @@ const projectsData = [
     team: "8 desenvolvedores",
     link: "https://nandeva.vercel.app/"
   },
- /* {
+  
+  {
     id: 3,
-    title: "App de Delivery Inteligente",
-    client: "QuickBite Foods",
-    category: "mobile",
+    title: "Landing Page",
+    client: "SerraGás",
+    category: "website",
     year: 2026,
-    technologies: ["react-native", "node"],
-    image: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-    icon: "📲",
-    shortDescription: "Aplicativo de delivery com rastreamento em tempo real e programa de fidelidade.",
-    fullDescription: "Aplicativo mobile completo para delivery de comida, com rastreamento em tempo real, múltiplas formas de pagamento, sistema de avaliações e programa de fidelidade gamificado.",
-    challenge: "O QuickBite queria competir com grandes players do mercado oferecendo uma experiência superior e taxas menores para restaurantes parceiros.",
-    solution: "Desenvolvemos apps nativos para iOS e Android usando React Native, integração com Google Maps para rastreamento, sistema de pagamento in-app, e um algoritmo de matching inteligente entre entregadores e pedidos.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "img/serragas.png",
+    shortDescription: "Landing Page para a empresa SerraGás.",
+    fullDescription: "Desenvolvemos uma landing page para a empresa SerraGás, com foco em apresentar seus produtos e oferecer uma experiência de compra simples e intuitiva.",
+    challenge: "A SerraGás precisava de uma landing page que oferecesse uma experiência de compra simples e intuitiva, com um design moderno e responsivo.",
+    solution: "Desenvolvemos uma landing page responsiva usando HTML e CSS para interface rica e JavaScript para interação do usuário.",
     results: [
-      "50.000+ downloads nos primeiros 3 meses",
+      "Clientes satisfeitos com a experiência de compra",
       "Rating médio de 4.8 estrelas",
-      "Tempo médio de entrega: 28 minutos",
-      "200+ restaurantes parceiros",
-      "Sistema de fidelidade aumentou pedidos recorrentes em 85%"
+      "Aumento de 30% em vendas online",
+      "Maior visibilidade no Google Ads"
     ],
-    techStack: ["React Native", "Node.js", "PostgreSQL", "Redis", "Google Maps API", "Firebase"],
-    duration: "5 meses",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
+    duration: "2 meses",
     team: "7 desenvolvedores",
-    link: "#"
+    link: "https://serragas.vercel.app/"
   },
+  
   {
     id: 4,
-    title: "Portfólio Criativo Interativo",
-    client: "Pixel Perfect Design",
+    title: "E-Book Mobile",
+    client: "DKBooks",
     category: "web",
     year: 2025,
-    technologies: ["react"],
-    image: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-    icon: "🎨",
-    shortDescription: "Website institucional com animações interativas e galeria de projetos dinâmica.",
-    fullDescription: "Website institucional para agência de design com foco em experiência visual impressionante, animações suaves, galeria interativa de projetos e sistema de blog integrado.",
-    challenge: "A Pixel Perfect queria um site que refletisse sua criatividade e expertise em design, com animações complexas mas mantendo performance excelente.",
-    solution: "Utilizamos Next.js para SSR e otimização SEO, GSAP para animações fluidas, e Sanity CMS headless para gerenciamento de conteúdo. Implementamos lazy loading e code splitting para manter o site rápido.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "img/sem-rumo.png",
+    shortDescription: "E-Book para o estudio DKBooks.",
+    fullDescription: "Desenvolvemos um e-Book para o estudio DKBooks, com foco em o usuário ter uma experiência intuitiva e simples de navegação, e um design moderno e responsivo.",
+    challenge: "O estudio DKBooks precisava de um e-Book que oferecesse uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
+    solution: "Utilizamos HTML e CSS para interface rica e JavaScript para interação do usuário, e fizemos uma imersão dentro do livro usando audios específicos para cada capitulo.",
     results: [
-      "Score 98/100 no Google PageSpeed",
+      "Clientes satisfeitos com a experiência de leitura",
       "Aumento de 220% no tempo de permanência",
       "Redução de 35% na taxa de rejeição",
-      "10+ prêmios de design web",
-      "Aumento de 180% em leads qualificados"
+      "Clientes que relataram que gostaram do livro e se sentiram \"dentro dele\""
     ],
-    techStack: ["Next.js", "GSAP", "Sanity CMS", "Tailwind CSS", "Vercel"],
+    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel"],
     duration: "3 meses",
     team: "4 desenvolvedores",
-    link: "#"
+    link: "ebook-sem-rumo.vercel.app"
   },
+ 
   {
     id: 5,
-    title: "Dashboard de Analytics Avançado",
-    client: "DataDrive Solutions",
-    category: "system",
-    year: 2026,
-    technologies: ["angular", "node"],
-    image: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
-    icon: "📊",
-    shortDescription: "Dashboard completo de análise de dados com visualizações interativas.",
-    fullDescription: "Sistema de analytics empresarial com visualizações interativas, relatórios personalizados, integração com múltiplas fontes de dados e alertas automatizados.",
-    challenge: "A DataDrive precisava consolidar dados de 15+ fontes diferentes (Google Analytics, CRM, ERP, redes sociais) em uma única visualização coerente e em tempo real.",
-    solution: "Construímos uma arquitetura de microserviços com Angular no frontend para dashboards dinâmicos, Node.js para APIs de integração, e PostgreSQL com TimescaleDB para séries temporais. Implementamos cache com Redis e processamento em background com Bull Queue.",
-    results: [
-      "Consolidação de 15 fontes de dados",
-      "Atualização de métricas em tempo real (< 2s)",
-      "Criação de 50+ relatórios customizados",
-      "Economia de 120 horas/mês em análise manual",
-      "Alertas automatizados para 30+ KPIs"
-    ],
-    techStack: ["Angular", "D3.js", "Node.js", "PostgreSQL", "TimescaleDB", "Redis", "Docker"],
-    duration: "7 meses",
-    team: "9 desenvolvedores",
-    link: "#"
-  },
-  {
-    id: 6,
-    title: "Site Institucional Tech Company",
-    client: "InnovaTech Corp",
+    title: "Livro De Receitas",
+    client: "CozinhaComRenan",
     category: "web",
     year: 2025,
-    technologies: ["react"],
-    image: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
-    icon: "🏢",
-    shortDescription: "Website corporativo moderno com CMS headless e área de carreiras.",
-    fullDescription: "Website institucional completo para empresa de tecnologia, incluindo apresentação de produtos, blog técnico, área de carreiras com integração de ATS, e portal de clientes.",
-    challenge: "A InnovaTech estava crescendo rapidamente e precisava de um site escalável que suportasse conteúdo multilíngue, integração com ferramentas de marketing, e um sistema robusto de carreiras.",
-    solution: "Desenvolvemos com Gatsby para performance máxima e SEO, Contentful como CMS headless para gestão de conteúdo multilíngue, integração com HubSpot para marketing automation, e API customizada para vagas com integração ao ATS Greenhouse.",
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel", "GitHub"],
+    image: "img/receitas.png",
+    shortDescription: "Livro de receitas para a empresa CozinhaComRenan.",
+    fullDescription: "Desenvolvemos um livro de receitas para a empresa CozinhaComRenan, com foco em oferecer uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
+    challenge: "A CozinhaComRenan precisava de um livro de receitas que oferecesse uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
+    solution: "Desenvolvemos um livro de receitas responsivo usando HTML e CSS para interface rica e JavaScript para interação do usuário.",
     results: [
-      "Tempo de carregamento médio: 1.2s",
-      "Suporte para 5 idiomas",
-      "Aumento de 310% em candidaturas",
-      "Blog técnico com 50.000+ visitas/mês",
-      "Score 100/100 em acessibilidade"
+      "Clientes satisfeitos com a experiência de leitura",
+      "Clientes relataram que as receitas ajudaram a resolver problemas de dieta",
+      "Economia de tempo testando receitas da internet",
+      "Maior tempo de interação com amigos e familiares, por não precisar procurar receitas online"
     ],
-    techStack: ["Gatsby", "Contentful", "Tailwind CSS", "HubSpot API", "Netlify"],
+    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
+    duration: "3 meses",
+    team: "4 desenvolvedores",
+    link: "https://caderno-de-receitas-beta.vercel.app/"
+  },
+ 
+  {
+    id: 6,
+    title: "Portfólio Interativo",
+    client: "EchoDome Band",
+    category: "web",
+    year: 2025,
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
+    image: "img/echodome.png",
+    shortDescription: "Portfólio interativo para a banda EchoDome.",
+    fullDescription: "Desenvolvemos um portfólio interativo para a banda EchoDome, com foco em oferecer uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
+    challenge: "A banda EchoDome precisava de um portfólio interativo que oferecesse uma experiência de leitura simples e intuitiva, com um design moderno e responsivo, onde eles pudessem apresentar seus trabalhos e divulgar suas atividades.",
+    solution: "Desenvolvemos um portfólio interativo responsivo usando HTML e CSS para interface rica e JavaScript para interação do usuário.",
+    results: [ 
+      "A equipe da banda EchoDome adorou o estilo da pagina",
+      "Aumento de 30% na quantidade de seguidores no Instagram",
+      "Aumento de 40% de público em Shows da banda",
+      "Maior visibilidade no Google Ads"
+    ],
+    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
     duration: "4 meses",
     team: "5 desenvolvedores",
-    link: "#"
+    link: "https://banda-echo-dome.vercel.app"
   },
-  {
+ 
+ /* {
     id: 7,
     title: "Plataforma de Cursos Online",
     client: "EduTech Academy",
