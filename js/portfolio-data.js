@@ -3,54 +3,48 @@ const projectsData = [
   {
     id: 1,
     title: "Loja Virtual Premium",
-    client: "TechStyle Fashion",
+    client: "MarisaStore",
     category: "ecommerce",
     year: 2026,
-    technologies: ["react", "node", "stripe"],
-    image: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-    icon: "🛍️",
-    shortDescription: "E-commerce completo com gestão avançada de produtos e múltiplos gateways de pagamento.",
-    fullDescription: "Desenvolvemos uma plataforma de e-commerce de alta performance para a TechStyle Fashion, integrando gestão completa de produtos, múltiplos gateways de pagamento e um sistema de analytics em tempo real.",
-    challenge: "A TechStyle precisava de uma solução que suportasse alto volume de transações simultâneas, integrasse com seu ERP legado e oferecesse uma experiência de compra fluida em todos os dispositivos.",
-    solution: "Criamos uma arquitetura escalável usando React no frontend para uma interface responsiva e dinâmica, Node.js no backend para processar transações de forma eficiente, e integramos múltiplos gateways de pagamento incluindo Stripe e PagSeguro.",
+    image: "img/marisa-store.png",
+    shortDescription: "E-commerce completo com gestão avançada de produtos.",
+    fullDescription: "Desenvolvemos uma plataforma de e-commerce de alta performance para a MarisaStore, integrando gestão completa de produtos, carrinho de compras e um sistema de analytics em tempo real.",
+    challenge: "A MarisaStore precisava de uma solução que suportasse alto volume de vendas, gestão avançada de produtos, e que e oferecesse uma experiência de compra fluida em todos os dispositivos.",
+    solution: "Criamos uma arquitetura escalável usando HTML e CSS no frontend para uma interface responsiva e dinâmica, JavaScript no backend para processar pedidos de forma eficiente.",
     results: [
       "Aumento de 150% nas conversões online",
       "Redução de 40% no tempo de checkout",
       "99.9% de uptime desde o lançamento",
-      "Integração com 3 gateways de pagamento",
-      "Sistema de recomendação inteligente implementado"
     ],
-    techStack: ["React", "Node.js", "MongoDB", "Stripe", "Redis", "AWS"],
-    duration: "4 meses",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
+    duration: "2 meses",
     team: "6 desenvolvedores",
-    link: "#"
+    link: "https://marisa-store.vercel.app/"
   },
+
   {
     id: 2,
-    title: "Sistema de Gestão Médica",
-    client: "InovaMed Clínicas",
-    category: "system",
-    year: 2025,
-    technologies: ["vue", "laravel"],
-    image: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-    icon: "🏥",
-    shortDescription: "Plataforma completa de gestão clínica com prontuários eletrônicos e agendamento inteligente.",
-    fullDescription: "Sistema completo de gestão para clínicas médicas, incluindo prontuário eletrônico, agendamento online, controle financeiro, e integração com laboratórios e operadoras de saúde.",
-    challenge: "A InovaMed gerenciava 3 clínicas com sistemas diferentes, causando inconsistência de dados e dificuldade no controle financeiro. Precisavam centralizar todas as operações mantendo conformidade com LGPD e normas do CFM.",
-    solution: "Desenvolvemos uma solução web centralizada usando Vue.js para interface responsiva e Laravel para backend robusto. Implementamos criptografia de ponta a ponta para dados sensíveis e auditoria completa de acessos.",
+    title: "Portfólio Criativo",
+    client: "Nandeva",
+    category: "website",
+    image: "img/nandeva.png",
+    year: "2025",
+    shortDescription: "Plataforma completa de gestão para a banda Nandeva.",
+    fullDescription: "Sistema completo de gestão para a banda, incluindo agendamento de shows, controle de galeria.",
+    challenge: "A banda Nandeva gerenciava 3 redes sociais com sistemas diferentes, causando inconsistência de dados e dificuldade no controle de publicações e agendamentos de shows. Precisavam centralizar todas as redes sociais em uma plataforma unificada, garantindo que ficasse mais fácil para quem acompanha a banda.",
+    solution: "Desenvolvemos uma solução web centralizada usando HTML e CSS para interface responsiva e JavaScript e Firebase para backend simples. Implementamos criptografia de ponta a ponta para dados sensíveis e auditoria completa de acessos.",
     results: [
-      "Centralização de 3 clínicas em uma única plataforma",
-      "Redução de 60% no tempo de agendamento",
-      "100% de conformidade com LGPD",
-      "Diminuição de 45% em erros de prontuário",
-      "Integração com 5 laboratórios parceiros"
+      "Centralização de 3 redes sociais em uma única plataforma",
+      "Redução de 60% no tempo de agendamento de shows",
+      "Diminuição de 45% em informações incorretas",
+      "Aumento de 70% na qualidade de dados",
     ],
-    techStack: ["Vue.js", "Laravel", "MySQL", "Redis", "Docker"],
-    duration: "6 meses",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
+    duration: "1 meses",
     team: "8 desenvolvedores",
-    link: "#"
+    link: "https://nandeva.vercel.app/"
   },
-  {
+ /* {
     id: 3,
     title: "App de Delivery Inteligente",
     client: "QuickBite Foods",
@@ -599,7 +593,7 @@ const projectsData = [
     duration: "7 meses",
     team: "9 desenvolvedores",
     link: "#"
-  }
+  } */
 ];
 
 // Export for use in other files

@@ -48,18 +48,6 @@ function setupEventListeners() {
     });
   });
 
-  // Technology Filter
-  techFilter.addEventListener('change', (e) => {
-    activeFilters.technology = e.target.value;
-    resetAndFilter();
-  });
-
-  // Year Filter
-  yearFilter.addEventListener('change', (e) => {
-    activeFilters.year = e.target.value;
-    resetAndFilter();
-  });
-
   // Search Input
   let searchTimeout;
   searchInput.addEventListener('input', (e) => {
@@ -105,6 +93,12 @@ function setupEventListeners() {
     activeFilters.search = '';
     resetAndFilter();
   });
+
+  modalOverlay.addEventListener('click', closeModal);
+modalClose.addEventListener('click', (e) => {
+  e.stopPropagation(); // Evita que o clique "vaze" para outros elementos
+  closeModal();
+});
 }
 
 // Setup Infinite Scroll
@@ -126,18 +120,6 @@ function filterProjects() {
   filteredProjects = projectsData.filter(project => {
     // Category filter
     if (activeFilters.category !== 'all' && project.category !== activeFilters.category) {
-      return false;
-    }
-
-    // Technology filter
-    if (activeFilters.technology !== 'all') {
-      if (!project.technologies.includes(activeFilters.technology)) {
-        return false;
-      }
-    }
-
-    // Year filter
-    if (activeFilters.year !== 'all' && project.year.toString() !== activeFilters.year) {
       return false;
     }
 
@@ -239,8 +221,7 @@ function createProjectCard(project) {
   card.onclick = () => openModal(project);
 
   card.innerHTML = `
-    <div class="portfolio-item-image" style="background: ${project.image};">
-      <div style="font-size: 5rem; position: relative; z-index: 1;">${project.icon}</div>
+    <div class="portfolio-item-image" style="background-image: url('${project.image}'); background-size: cover; background-position: center;">
       <div class="portfolio-item-overlay">
         <button class="view-project-btn">Ver Projeto</button>
       </div>
@@ -280,12 +261,10 @@ function getCategoryName(category) {
 function openModal(project) {
   const modalBody = document.querySelector('.modal-body');
   
+  // 1. Mudamos para background-image e removemos o ícone que dava 'undefined'
   modalBody.innerHTML = `
-    <div class="modal-header-image" style="background: ${project.image};">
-      <div style="font-size: 8rem; position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; height: 100%;">
-        ${project.icon}
+    <div class="modal-header-image" style="background-image: url('${project.image}'); background-size: cover; background-position: center;">
       </div>
-    </div>
     
     <div class="modal-info">
       <div class="modal-title-section">
@@ -347,13 +326,17 @@ function openModal(project) {
     </div>
   `;
 
+  // 2. Ativamos o modal e o overlay (fundo escuro)
   projectModal.classList.add('active');
+  if(modalOverlay) modalOverlay.classList.add('active'); 
+  
   document.body.style.overflow = 'hidden';
 }
-
 // Close Modal
+// Substitua sua função closeModal por esta:
 function closeModal() {
   projectModal.classList.remove('active');
+  modalOverlay.classList.remove('active'); // Garante que o fundo também suma
   document.body.style.overflow = 'auto';
 }
 
