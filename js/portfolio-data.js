@@ -136,7 +136,7 @@ const projectsData = [
       "Maior visibilidade no Google Ads"
     ],
     techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
-    duration: "4 meses",
+    duration: "1 meses",
     team: "5 desenvolvedores",
     link: "https://banda-echo-dome.vercel.app"
   },
