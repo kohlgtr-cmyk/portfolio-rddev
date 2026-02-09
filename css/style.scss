@@ -1344,3 +1344,24 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+
+/* Estilos para mensagem de sucesso/erro do formulário */
+.success-message {
+    background-color: rgba(76, 175, 80, 0.1);
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.error-message {
+    background-color: rgba(244, 67, 54, 0.1);
+    border: 1px solid #F44336;
+    color: #F44336;
+    font-weight: 500;
+}
+
+/* Animação suave para o botão enquanto envia */
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}

@@ -86,3 +86,53 @@ const skillObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 skillBars.forEach(bar => skillObserver.observe(bar));
+
+// Lógica de Envio do Formulário via AJAX
+const contactForm = document.getElementById('contact-form');
+const statusDiv = document.getElementById('form-status');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Impede o recarregamento da página
+        
+        const formData = new FormData(contactForm);
+        const submitBtn = contactForm.querySelector('.submit-btn');
+        const originalBtnText = submitBtn.innerHTML;
+
+        // Muda texto do botão para indicar carregamento
+        submitBtn.innerHTML = 'Enviando...';
+        submitBtn.disabled = true;
+        statusDiv.style.display = 'none'; // Esconde mensagem anterior se houver
+
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Sucesso
+                statusDiv.innerHTML = "Mensagem enviada com sucesso! Em breve entraremos em contato.";
+                statusDiv.className = 'success-message'; // Aplica estilo verde
+                statusDiv.style.display = 'block';
+                contactForm.reset(); // Limpa os campos do formulário
+            } else {
+                // Erro do servidor
+                throw new Error('Erro no envio');
+            }
+        })
+        .catch(error => {
+            // Erro de conexão
+            statusDiv.innerHTML = "Ocorreu um erro ao enviar. Tente novamente ou chame no WhatsApp.";
+            statusDiv.className = 'error-message'; // Aplica estilo vermelho
+            statusDiv.style.display = 'block';
+        })
+        .finally(() => {
+            // Restaura o botão ao normal
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+        });
+    });
+}
