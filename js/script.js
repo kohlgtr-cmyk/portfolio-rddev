@@ -30,12 +30,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Obrigado pelo contato! Retornaremos em breve.');
-    this.reset();
-});
+
 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {

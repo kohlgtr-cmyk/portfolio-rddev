@@ -743,12 +743,19 @@ nav {
 .about-image {
   background: linear-gradient(135deg, #1a2c42, #2d4563);
   border-radius: 10px;
-  height: 500px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 8rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Contact Section */
@@ -815,6 +822,19 @@ nav {
   background: #f8f9fa;
   padding: 3rem;
   border-radius: 10px;
+}
+
+.contact-text p {
+  color: #0a1929;
+}
+.contact-text a {
+  text-decoration: none;
+  color: #0a1929;
+}
+.contact-text a:hover {
+  -webkit-text-decoration: underline #4a90e2;
+          text-decoration: underline #4a90e2;
+  color: #4a90e2;
 }
 
 .form-row {

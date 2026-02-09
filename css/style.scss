@@ -743,12 +743,18 @@ body {
         .about-image {
             background: linear-gradient(135deg, $navy-medium, $navy-light);
             border-radius: 10px;
-            height: 500px;
+            height: 600px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 8rem;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
         }
 
         /* Contact Section */
@@ -815,6 +821,20 @@ body {
             background: $off-white;
             padding: 3rem;
             border-radius: 10px;
+        }
+
+        .contact-text {
+            p {
+            color: $navy-dark;
+            }
+            a {
+                text-decoration: none;
+                color: $navy-dark;
+            }
+            a:hover {
+                text-decoration: underline $blue-accent;
+                color: $blue-accent;
+            }
         }
 
         .form-row {
