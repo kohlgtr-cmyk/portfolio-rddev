@@ -18,7 +18,7 @@ const projectsData = [
     ],
     techStack: ["HTML5", "CSS3", "JavaScript"],
     duration: "2 meses",
-    team: "6 desenvolvedores",
+    team: "1 desenvolvedor",
     link: "https://marisa-store.vercel.app/"
   },
 
@@ -40,8 +40,8 @@ const projectsData = [
       "Aumento de 70% na qualidade de dados",
     ],
     techStack: ["HTML5", "CSS3", "JavaScript"],
-    duration: "1 meses",
-    team: "8 desenvolvedores",
+    duration: "1 mes",
+    team: "2 desenvolvedores",
     link: "https://nandeva.vercel.app/"
   },
   
@@ -65,7 +65,7 @@ const projectsData = [
     ],
     techStack: ["HTML5", "CSS3", "JavaScript"],
     duration: "2 meses",
-    team: "7 desenvolvedores",
+    team: "2 desenvolvedores",
     link: "https://serragas.vercel.app/"
   },
   
@@ -89,7 +89,7 @@ const projectsData = [
     ],
     techStack: ["HTML5", "CSS3", "JavaScript", "Vercel"],
     duration: "3 meses",
-    team: "4 desenvolvedores",
+    team: "1 desenvolvedor",
     link: "ebook-sem-rumo.vercel.app"
   },
  
@@ -113,7 +113,7 @@ const projectsData = [
     ],
     techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
     duration: "3 meses",
-    team: "4 desenvolvedores",
+    team: "2 desenvolvedores",
     link: "https://caderno-de-receitas-beta.vercel.app/"
   },
  
@@ -136,8 +136,8 @@ const projectsData = [
       "Maior visibilidade no Google Ads"
     ],
     techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
-    duration: "1 meses",
-    team: "5 desenvolvedores",
+    duration: "1 mes",
+    team: "2 desenvolvedores",
     link: "https://banda-echo-dome.vercel.app"
   },
  
@@ -160,7 +160,7 @@ const projectsData = [
       "Maior visibilidade no Google Ads"
     ],
     techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
-    duration: "1 meses",
+    duration: "1 mes",
     team: "2 desenvolvedores",
     link: "https://roberttattoo.vercel.app"
   },
@@ -184,7 +184,7 @@ const projectsData = [
       "Maior visibilidade no Google Ads"
     ],
     techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub",],
-    duration: "2 meses",
+    duration: "1 mes",
     team: "3 desenvolvedores",
     link: "https://valeconecta.vercel.app"
   },
