@@ -141,57 +141,54 @@ const projectsData = [
     link: "https://banda-echo-dome.vercel.app"
   },
  
- /* {
+ {
     id: 7,
-    title: "Plataforma de Cursos Online",
-    client: "EduTech Academy",
-    category: "system",
+    title: "Landing Page",
+    client: "Robert Tattoo",
+    category: "web",
     year: 2026,
-    technologies: ["react", "node"],
-    image: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
-    icon: "📚",
-    shortDescription: "LMS completo com videoaulas, exercícios e certificados digitais.",
-    fullDescription: "Learning Management System completo com streaming de vídeo, sistema de exercícios e provas, gamificação, certificados digitais, e marketplace de cursos.",
-    challenge: "A EduTech queria criar uma plataforma que rivalizasse com grandes players como Udemy e Coursera, mas com foco no mercado brasileiro e recursos de interação ao vivo.",
-    solution: "Desenvolvemos uma plataforma escalável usando React para interface rica, Node.js para backend, streaming de vídeo com AWS MediaConvert, live streaming com WebRTC, e blockchain para certificados verificáveis.",
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
+    image: "/img/robert-tattoo.png",
+    shortDescription: "Landing Page para a empresa Robert Tattoo.",
+    fullDescription: "Desenvolvemos uma landing page para a empresa Robert Tattoo, com foco em apresentar seus produtos e oferecer uma experiência de compra simples e intuitiva.",
+    challenge: "A Robert Tattoo precisava de uma landing page que oferecesse uma experiência de compra simples e intuitiva, com um design moderno e responsivo.",
+    solution: "Desenvolvemos uma landing page responsiva usando HTML e CSS para interface rica e JavaScript para interação do usuário.",
     results: [
-      "15.000+ alunos ativos",
-      "500+ cursos publicados",
+      "Aumento de 30% em demanda de produtos",
+      "Aumento de 20% em vendas online",
       "Taxa de conclusão de 68% (média mercado: 15%)",
-      "Sistema de certificados blockchain",
-      "Live classes com até 1000 participantes simultâneos"
+      "Maior visibilidade no Google Ads"
     ],
-    techStack: ["React", "Node.js", "MongoDB", "AWS MediaConvert", "WebRTC", "Stripe", "Ethereum"],
-    duration: "8 meses",
-    team: "10 desenvolvedores",
-    link: "#"
+    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
+    duration: "1 meses",
+    team: "2 desenvolvedores",
+    link: "https://roberttattoo.vercel.app"
   },
-  {
+ 
+ {
     id: 8,
-    title: "App de Gestão Financeira Pessoal",
-    client: "MoneyWise Finance",
-    category: "mobile",
+    title: "Landing Page",
+    client: "Vale Conecta",
+    category: "mweb",
     year: 2025,
-    technologies: ["flutter", "node"],
-    image: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
-    icon: "💰",
-    shortDescription: "App de finanças pessoais com IA para insights e recomendações.",
-    fullDescription: "Aplicativo mobile de gestão financeira pessoal com categorização automática de gastos, metas de economia, integração bancária via Open Finance, e insights gerados por IA.",
-    challenge: "O MoneyWise queria se diferenciar oferecendo insights realmente úteis e automação máxima, reduzindo o trabalho manual do usuário ao mínimo.",
-    solution: "Criamos apps nativos com Flutter, integração Open Finance para sincronização automática de transações, machine learning para categorização inteligente de gastos, e chatbot com IA para consultas em linguagem natural.",
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
+    image: "img/vale.png",
+    shortDescription: "Landing Page para a empresa Vale Conecta.",
+    fullDescription: "Desenvolvemos uma landing page para a empresa Vale Conecta, com foco em apresentar seus produtos de forma simples e intuitiva.",
+    challenge: "A Vale Conecta precisava de uma landing page que oferecesse uma experiência de compra simples e intuitiva, com um design moderno e responsivo focado em ser visto em celulares.",
+    solution: "Desenvolvemos uma landing page responsiva usando HTML e CSS para interface rica e JavaScript para interação do usuário.",
     results: [
-      "100.000+ usuários ativos",
-      "Integração com 50+ instituições financeiras",
-      "Precisão de 94% na categorização automática",
+      "Aumento de 30% nas vendas",
       "Usuários economizaram em média R$ 380/mês",
-      "Rating 4.7 estrelas nas stores"
+      "Rating 4.7 estrelas nas pesquisas",
+      "Maior visibilidade no Google Ads"
     ],
-    techStack: ["Flutter", "Node.js", "Python", "TensorFlow", "PostgreSQL", "Redis"],
-    duration: "6 meses",
-    team: "8 desenvolvedores",
-    link: "#"
+    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub",],
+    duration: "2 meses",
+    team: "3 desenvolvedores",
+    link: "https://valeconecta.vercel.app"
   },
-  {
+ /* {
     id: 9,
     title: "Marketplace de Serviços Locais",
     client: "LocalPro Services",
