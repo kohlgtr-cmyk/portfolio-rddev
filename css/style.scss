@@ -1365,3 +1365,198 @@ body {
     opacity: 0.7;
     cursor: not-allowed;
 }
+
+/* Fix responsivo rápido */
+@media (max-width: 1024px) {
+    nav {
+        padding: 0.8rem 3% !important;
+    }
+    
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links li a {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .nav-cta {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+        white-space: nowrap; /* Evita quebra de linha */
+    }
+}
+
+/* ========================================
+   FIX DEFINITIVO: Menu Responsivo
+   Cole este código NO FINAL do seu style.css
+======================================== */
+
+/* Força o menu a não quebrar em telas médias */
+@media (max-width: 1200px) {
+    .nav-container {
+        padding: 0;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+    }
+    
+    .nav-links li a {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .nav-cta {
+        padding: 0.6rem 1.2rem !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+/* iPad Pro e tablets grandes (1024px) */
+@media (max-width: 1024px) {
+    nav {
+        padding: 1rem 2% !important;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-links li a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.7rem;
+    }
+    
+    .nav-cta {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+        white-space: nowrap;
+    }
+}
+
+/* Tablets e iPads (900px) */
+@media (max-width: 900px) {
+    .nav-links {
+        gap: 0.8rem;
+    }
+    
+    .nav-links li a {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .nav-cta {
+        padding: 0.5rem 0.9rem !important;
+        font-size: 0.75rem !important;
+    }
+}
+
+/* iPad Air, Asus Zenfone, tablets menores (850px) */
+@media (max-width: 850px) {
+    nav {
+        padding: 0.8rem 2% !important;
+    }
+    
+    .nav-container {
+        gap: 0.5rem;
+    }
+    
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links li a.nav-link {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.5rem;
+    }
+    
+    .nav-cta {
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.7rem !important;
+    }
+}
+
+/* MOBILE - Muda para menu vertical (768px) */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem 3% !important;
+        position: relative;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0.3rem;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 0.8rem 1rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .nav-cta {
+        width: auto !important;
+        min-width: 150px;
+        padding: 0.8rem 2rem !important;
+        font-size: 0.9rem !important;
+        text-align: center;
+    }
+}
+
+/* Mobile pequeno (480px) */
+@media (max-width: 480px) {
+    nav {
+        padding: 0.8rem 4% !important;
+    }
+    
+    .logo-text {
+        font-size: 1.5rem;
+    }
+    
+    .nav-links li a {
+        padding: 0.7rem 1rem !important;
+        font-size: 0.85rem !important;
+    }
+    
+    .nav-cta {
+        padding: 0.7rem 1.5rem !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Mobile muito pequeno (375px) */
+@media (max-width: 375px) {
+    .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .nav-links li a {
+        font-size: 0.8rem !important;
+    }
+    
+    .nav-cta {
+        font-size: 0.8rem !important;
+    }
+}
