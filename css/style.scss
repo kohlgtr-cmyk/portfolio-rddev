@@ -1544,6 +1544,21 @@ body {
         padding: 0.7rem 1.5rem !important;
         font-size: 0.85rem !important;
     }
+    .beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.beneficio-card {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: $navy-medium;
+  border: 1px solid $blue-accent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
 }
 
 /* Mobile muito pequeno (375px) */
