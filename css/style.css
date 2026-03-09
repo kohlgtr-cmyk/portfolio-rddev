@@ -39,6 +39,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
+  text-decoration: none;
 }
 
 .logo-img {
@@ -52,6 +53,7 @@ nav {
   font-weight: 700;
   color: #0a1929;
   letter-spacing: -0.5px;
+  text-decoration: none;
 }
 
 .logo-text span {
@@ -1457,6 +1459,9 @@ footer {
   .logo {
     width: 100%;
     text-align: center;
+  }
+  .logo a{
+    text-decoration: none;
   }
   .nav-links {
     flex-direction: column;

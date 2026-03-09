@@ -1,0 +1,104 @@
+  <!-- Testimonials Section -->
+    <section class="testimonials fade-up" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Depoimentos</div>
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <p>A satisfação dos nossos clientes é nossa maior conquista</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">A RDDev superou todas as expectativas. O site ficou impecável e o suporte foi excepcional do início ao fim do projeto.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>Marina Rodrigues</h4>
+                            <p>CEO, TechStyle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Profissionalismo e qualidade incomparáveis. Entregaram um sistema robusto que transformou nossa operação completamente.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CA</div>
+                        <div class="author-info">
+                            <h4>Carlos Almeida</h4>
+                            <p>Diretor, InovaMed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Trabalho excepcional! O app mobile ficou incrível e está superando nossas metas de downloads e engajamento.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">BL</div>
+                        <div class="author-info">
+                            <h4>Beatriz Lima</h4>
+                            <p>Fundadora, QuickBite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pós-Entrega / Garantia -->
+    <section class="pos-entrega fade-up" id="pos-entrega">
+        <div class="container">
+            <div class="pos-entrega-grid">
+                <div class="pos-entrega-content">
+                    <div class="section-tag-gold">PÓS-ENTREGA</div>
+                    <h2>Seu projeto entregue, <span class="highlight-gold">meu compromisso continua</span></h2>
+                    <p class="intro-text">A entrega do projeto não é o fim do nosso relacionamento. Ofereço 30 dias de suporte gratuito para garantir que tudo funcione perfeitamente e você tenha tranquilidade total.</p>
+                    <div class="beneficios-grid">
+                        <div class="beneficio-card">
+                            <div class="beneficio-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div class="beneficio-info">
+                                <h4>30 Dias de Suporte</h4>
+                                <p>Suporte técnico completo durante os primeiros 30 dias após a entrega.</p>
+                            </div>
+                        </div>
+                        <div class="beneficio-card">
+                            <div class="beneficio-icon"><i class="fa-solid fa-wrench"></i></div>
+                            <div class="beneficio-info">
+                                <h4>Correção de Bugs</h4>
+                                <p>Correção gratuita de qualquer bug ou erro técnico que apareça no período.</p>
+                            </div>
+                        </div>
+                        <div class="beneficio-card">
+                            <div class="beneficio-icon"><i class="fa-solid fa-sliders"></i></div>
+                            <div class="beneficio-info">
+                                <h4>Pequenos Ajustes</h4>
+                                <p>Alterações simples como textos, cores ou detalhes visuais sem custo adicional.</p>
+                            </div>
+                        </div>
+                        <div class="beneficio-card">
+                            <div class="beneficio-icon"><i class="fa-solid fa-headset"></i></div>
+                            <div class="beneficio-info">
+                                <h4>Atendimento Prioritário</h4>
+                                <p>Canal direto para tirar dúvidas e resolver questões rapidamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="garantia-card-container">
+                    <div class="garantia-card">
+                        <div class="garantia-badge"><i class="fa-solid fa-check"></i> Incluído</div>
+                        <div class="garantia-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="garantia-title">
+                            <h3>30 Dias</h3>
+                            <p>de Garantia e Suporte</p>
+                        </div>
+                        <div class="garantia-lista">
+                            <div class="garantia-item"><i class="fa-solid fa-circle-check"></i><span>Correções incluídas</span></div>
+                            <div class="garantia-item"><i class="fa-solid fa-circle-check"></i><span>Ajustes de texto e cores</span></div>
+                            <div class="garantia-item"><i class="fa-solid fa-circle-check"></i><span>Suporte via WhatsApp</span></div>
+                            <div class="garantia-item"><i class="fa-solid fa-circle-check"></i><span>Resposta em até 24h</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
