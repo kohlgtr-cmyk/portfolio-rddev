@@ -68,54 +68,6 @@ const projectsData = [
     team: "2 desenvolvedores",
     link: "https://serragas.vercel.app/"
   },
-  
-  {
-    id: 4,
-    title: "E-Book Mobile",
-    client: "DKBooks",
-    category: "web",
-    year: 2025,
-    technologies: ["HTML", "CSS", "JavaScript"],
-    image: "img/sem-rumo.png",
-    shortDescription: "E-Book para o estudio DKBooks.",
-    fullDescription: "Desenvolvemos um e-Book para o estudio DKBooks, com foco em o usuário ter uma experiência intuitiva e simples de navegação, e um design moderno e responsivo.",
-    challenge: "O estudio DKBooks precisava de um e-Book que oferecesse uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
-    solution: "Utilizamos HTML e CSS para interface rica e JavaScript para interação do usuário, e fizemos uma imersão dentro do livro usando audios específicos para cada capitulo.",
-    results: [
-      "Clientes satisfeitos com a experiência de leitura",
-      "Aumento de 220% no tempo de permanência",
-      "Redução de 35% na taxa de rejeição",
-      "Clientes que relataram que gostaram do livro e se sentiram \"dentro dele\""
-    ],
-    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel"],
-    duration: "3 meses",
-    team: "1 desenvolvedor",
-    link: "ebook-sem-rumo.vercel.app"
-  },
- 
-  {
-    id: 5,
-    title: "Livro De Receitas",
-    client: "CozinhaComRenan",
-    category: "web",
-    year: 2025,
-    technologies: ["HTML", "CSS", "JavaScript", "Vercel", "GitHub"],
-    image: "img/receitas.png",
-    shortDescription: "Livro de receitas para a empresa CozinhaComRenan.",
-    fullDescription: "Desenvolvemos um livro de receitas para a empresa CozinhaComRenan, com foco em oferecer uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
-    challenge: "A CozinhaComRenan precisava de um livro de receitas que oferecesse uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
-    solution: "Desenvolvemos um livro de receitas responsivo usando HTML e CSS para interface rica e JavaScript para interação do usuário.",
-    results: [
-      "Clientes satisfeitos com a experiência de leitura",
-      "Clientes relataram que as receitas ajudaram a resolver problemas de dieta",
-      "Economia de tempo testando receitas da internet",
-      "Maior tempo de interação com amigos e familiares, por não precisar procurar receitas online"
-    ],
-    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
-    duration: "3 meses",
-    team: "2 desenvolvedores",
-    link: "https://caderno-de-receitas-beta.vercel.app/"
-  },
  
   {
     id: 6,
@@ -562,32 +514,55 @@ const projectsData = [
     duration: "6 meses",
     team: "8 desenvolvedores",
     link: "#"
-  },
+  }, */
+
   {
     id: 24,
-    title: "Sistema de Gestão para Academias",
-    client: "GymFlow Manager",
-    category: "system",
+    title: "E-Book Mobile",
+    client: "DKBooks",
+    category: "web",
     year: 2025,
-    technologies: ["vue", "laravel"],
-    image: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-    icon: "🏋️",
-    shortDescription: "ERP completo para gestão de academias com app do aluno.",
-    fullDescription: "Sistema completo de gestão para academias incluindo controle de acesso biométrico, gestão de planos e pagamentos, agendamento de aulas, app do aluno com treinos, e dashboards de retenção.",
-    challenge: "O GymFlow atendia academias que lutavam com alta taxa de churn (cancelamento) e dificuldade em engajar alunos fora do horário de treino.",
-    solution: "Criamos um sistema com Vue.js para web admin, integração com catracas biométricas, gestão automática de cobranças recorrentes, app mobile para alunos com treinos personalizados e agendamento de aulas, gamificação com desafios e ranking, sistema de NPS automático, e analytics preditivo de churn.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "img/sem-rumo.png",
+    shortDescription: "E-Book para o estudio DKBooks.",
+    fullDescription: "Desenvolvemos um e-Book para o estudio DKBooks, com foco em o usuário ter uma experiência intuitiva e simples de navegação, e um design moderno e responsivo.",
+    challenge: "O estudio DKBooks precisava de um e-Book que oferecesse uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
+    solution: "Utilizamos HTML e CSS para interface rica e JavaScript para interação do usuário, e fizemos uma imersão dentro do livro usando audios específicos para cada capitulo.",
     results: [
-      "200+ academias usando",
-      "Redução de 35% na taxa de churn",
-      "Aumento de 50% em engajamento",
-      "Automação de 90% das cobranças",
-      "App com 100.000+ alunos ativos"
+      "Clientes satisfeitos com a experiência de leitura",
+      "Aumento de 220% no tempo de permanência",
+      "Redução de 35% na taxa de rejeição",
+      "Clientes que relataram que gostaram do livro e se sentiram \"dentro dele\""
     ],
-    techStack: ["Vue.js", "Laravel", "MySQL", "React Native", "Stripe", "Redis"],
-    duration: "7 meses",
-    team: "9 desenvolvedores",
-    link: "#"
-  } */
+    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel"],
+    duration: "3 meses",
+    team: "1 desenvolvedor",
+    link: "ebook-sem-rumo.vercel.app"
+  },
+ 
+  {
+    id: 25,
+    title: "Livro De Receitas",
+    client: "CozinhaComRenan",
+    category: "web",
+    year: 2025,
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel", "GitHub"],
+    image: "img/receitas.png",
+    shortDescription: "Livro de receitas para a empresa CozinhaComRenan.",
+    fullDescription: "Desenvolvemos um livro de receitas para a empresa CozinhaComRenan, com foco em oferecer uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
+    challenge: "A CozinhaComRenan precisava de um livro de receitas que oferecesse uma experiência de leitura simples e intuitiva, com um design moderno e responsivo.",
+    solution: "Desenvolvemos um livro de receitas responsivo usando HTML e CSS para interface rica e JavaScript para interação do usuário.",
+    results: [
+      "Clientes satisfeitos com a experiência de leitura",
+      "Clientes relataram que as receitas ajudaram a resolver problemas de dieta",
+      "Economia de tempo testando receitas da internet",
+      "Maior tempo de interação com amigos e familiares, por não precisar procurar receitas online"
+    ],
+    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "GitHub"],
+    duration: "3 meses",
+    team: "2 desenvolvedores",
+    link: "https://caderno-de-receitas-beta.vercel.app/"
+  },
 ];
 
 // Export for use in other files

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/services.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -155,7 +156,24 @@
             <p>&copy; 2026 RDDev Web Solutions. Todos os direitos reservados.</p>
         </div>
     </footer>
+<script>
+  let lastScroll = 0;
+  const filtersSection = document.querySelector('.portfolio-filters-section');
 
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll && currentScroll > 500) {
+      // Descendo → esconde
+      filtersSection.classList.add('hidden');
+    } else {
+      // Subindo → mostra
+      filtersSection.classList.remove('hidden');
+    }
+
+    lastScroll = currentScroll;
+  });
+</script>
     <script src="/js/portfolio-data.js"></script>
     <script src="/js/portfolio.js"></script>
 </body>

@@ -476,6 +476,7 @@
   right: 0;
   bottom: 0;
   background: rgba(10, 25, 41, 0.95);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   animation: fadeIn 0.3s ease;
 }
@@ -1129,4 +1130,18 @@
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(74, 144, 226, 0.1);
   }
-}/*# sourceMappingURL=portfolio.css.map */
+}
+/*# sourceMappingURL=portfolio.css.map */
+
+.portfolio-filters-section {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio-filters-section.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
