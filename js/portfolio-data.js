@@ -70,7 +70,7 @@ const projectsData = [
   },
  
   {
-    id: 6,
+    id: 4,
     title: "Portfólio Interativo",
     client: "EchoDome Band",
     category: "web",
@@ -94,7 +94,7 @@ const projectsData = [
   },
  
  {
-    id: 7,
+    id: 5,
     title: "Landing Page",
     client: "Robert Tattoo",
     category: "web",
@@ -118,7 +118,7 @@ const projectsData = [
   },
  
  {
-    id: 8,
+    id: 6,
     title: "Landing Page",
     client: "Vale Conecta",
     category: "mweb",
@@ -141,7 +141,7 @@ const projectsData = [
     link: "https://valeconecta.vercel.app"
   },
 {
-    id: 9,
+    id: 7,
     title: "Landing Page - Gastronomia",
     client: "Arte In Tavola",
     category: "landing page",
@@ -164,7 +164,7 @@ const projectsData = [
     link: "https://arte-in-tavola.vercel.app/index.html"
   },
  {
-    id: 10,
+    id: 8,
     title: "Portfólio Completo - Arquiteta",
     client: "Alessandra Arquiteta",
     category: "portfolio",
@@ -186,57 +186,47 @@ const projectsData = [
     team: "2 desenvolvedores",
     link: "https://teste-six-beta-60.vercel.app"
   },
-  /*{
-    id: 11,
-    title: "App de Meditação e Bem-Estar",
-    client: "MindfulLife Wellness",
-    category: "mobile",
+  {
+    id: 9,
+    title: "E-Commerce Completo - SM",
+    client: "Sua Marca Store",
+    category: "e-commerce",
     year: 2026,
-    technologies: ["react-native", "node"],
-    image: "linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)",
-    icon: "🧘",
-    shortDescription: "Aplicativo de meditação guiada com conteúdo personalizado e tracking.",
-    fullDescription: "App de saúde mental e meditação com sessões guiadas, música ambiente, journaling digital, tracking de humor, e recomendações personalizadas por IA.",
-    challenge: "O MindfulLife queria criar uma experiência verdadeiramente personalizada, onde o app aprendesse com os hábitos do usuário e recomendasse conteúdo no momento certo.",
-    solution: "Desenvolvemos com React Native para apps nativos, implementamos ML para análise de padrões de uso e recomendações, integração com Apple Health e Google Fit, notificações inteligentes baseadas em rotina, e áudio offline de alta qualidade.",
+    technologies: ["HTML5", "CSS", "JavaScript"],
+    image: "/img/sm.png",
+    shortDescription: "E-Commerce completo desenvolvido para apresentar o trabalho de uma empresa de e-commerce, com uma interface moderna e intuitiva para navegação e visualização dos produtos.",
+    fullDescription: "A cliente Sua Marca Store precisava de um e-commerce completo que oferecesse uma experiência de compra simples e intuitiva, com um design moderno e responsivo.",
+    challenge: "Foi preciso desenvolver um e-commerce completo que oferecesse uma experiência de compra simples e intuitiva, com um design moderno e responsivo.",
+    solution: "Nós na RDDev criamos um e-commerce completo responsivo usando HTML e CSS para interface rica e JavaScript para interação do usuário, que agradasse o cliente e seus consumidores.",
     results: [
-      "500.000+ downloads",
-      "Usuários meditam em média 18 minutos/dia",
-      "90% de retenção após 30 dias",
-      "Biblioteca com 1000+ meditações guiadas",
-      "Integração com wearables para biofeedback"
+      "Aumento em 38% nas vendas online",
+      "Facilidade de comunicação com o cliente final",
+      "Aprovação por 98% dos cliente",
     ],
-    techStack: ["React Native", "Node.js", "MongoDB", "Python", "TensorFlow", "Firebase"],
-    duration: "5 meses",
-    team: "6 desenvolvedores",
-    link: "#"
+    techStack: ["HTML5", "CSS3", "JavaScript", "Vercel", "Github"],
+    duration: "1 meses",
+    team: "2 desenvolvedores",
+    link: "https://fdstore.vercel.app/"
   },
   {
-    id: 12,
-    title: "Portal de Notícias Multimídia",
-    client: "NewsStream Digital",
-    category: "web",
+    id: 10,
+    title: "Landing Page",
+    client: "Barber Shop - Demonstração",
+    category: "landing-page",
     year: 2025,
-    technologies: ["react", "node"],
-    image: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
-    icon: "📰",
-    shortDescription: "Portal de notícias com vídeos, podcasts e paywall inteligente.",
-    fullDescription: "Portal de notícias moderno com artigos, vídeos, podcasts, newsletter, sistema de assinatura com paywall medido, e app mobile complementar.",
-    challenge: "A NewsStream precisava migrar do modelo tradicional para digital, implementar paywall sem perder audiência, e criar uma experiência multiplataforma coesa.",
-    solution: "Desenvolvemos um portal com Next.js para SEO otimizado e performance, CMS headless personalizado para jornalistas, sistema de paywall inteligente que libera conteúdo baseado em comportamento, integração com sistema de pagamentos recorrentes, e apps mobile sincronizados.",
-    results: [
-      "80.000 assinantes pagos em 12 meses",
-      "Tempo médio de sessão: 8 minutos",
-      "Newsletter com 200.000 inscritos",
-      "Conversão de visitantes em assinantes: 4.2%",
-      "Apps mobile com 150.000+ downloads"
-    ],
-    techStack: ["Next.js", "Node.js", "PostgreSQL", "Redis", "Stripe", "React Native"],
-    duration: "8 meses",
-    team: "10 desenvolvedores",
+    technologies: ["HTML", "CSS3","JavaScript","SASS", "Vercel", "Github"],
+    image: "/img/barber.png",
+    shortDescription: "Landing Page para a empresa Barber Shop.",
+    fullDescription: "Desenvolvemos uma landing page para a empresa Barber Shop, com foco em apresentar seus produtos e oferecer uma experiência de compra simples e intuitiva.",
+    challenge: "A Barber Shop precisava de uma landing page que oferecesse uma experiência de compra simples e intuitiva, com um design moderno e responsivo.",
+    solution: "Desenvolvemos uma landing page responsiva usando HTML e CSS para interface rica e JavaScript para interação do usuário.",
+    results: [],
+    techStack:["HTML", "CSS3","JavaScript","SASS", "Vercel", "Github"],
+    duration: "1 meses",
+    team: "1 desenvolvedores",
     link: "#"
   },
-  {
+/*  {
     id: 13,
     title: "Plataforma de Agendamento Multiservices",
     client: "BookNow Solutions",

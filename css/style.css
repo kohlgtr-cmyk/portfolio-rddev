@@ -4,6 +4,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+* {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: none;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Mata a borda branca lateral e o scroll horizontal */
+  position: relative;
+  background: #efefef;
+}
+
+/* Garante que a Nav não crie espaços */
+nav {
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 !important;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -1449,16 +1477,25 @@ footer {
 @media (max-width: 768px) {
   nav {
     padding: 1rem 3% !important;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .hero {
+    padding-top: 6rem;
   }
   .nav-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
   }
   .logo {
-    width: 100%;
-    text-align: center;
+    width: auto;
+    text-align: left;
   }
   .logo a{
     text-decoration: none;

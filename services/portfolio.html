@@ -273,6 +273,63 @@
             <p>&copy; 2026 RDDev Web Solutions. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script>
+    // ========================================
+    // HAMBURGER MENU
+    // ========================================
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    // Abre/fecha o menu principal
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileMenu.classList.toggle('open');
+
+        // Fecha o submenu de serviços ao fechar o menu principal
+        if (!mobileMenu.classList.contains('open')) {
+            mobileServicesToggle.classList.remove('open');
+            mobileSubmenu.classList.remove('open');
+        }
+    });
+
+    // Fecha o menu ao clicar em qualquer link (exceto a seta)
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+            mobileServicesToggle.classList.remove('open');
+            mobileSubmenu.classList.remove('open');
+        });
+    });
+
+    // ========================================
+    // MOBILE SUBMENU — SERVIÇOS
+    // ========================================
+    const mobileServicesToggle = document.getElementById('mobileServicesToggle');
+    const mobileSubmenu = document.getElementById('mobileSubmenu');
+
+    if (mobileServicesToggle) {
+        mobileServicesToggle.addEventListener('click', (e) => {
+            e.stopPropagation(); // Não propaga para outros listeners
+            mobileServicesToggle.classList.toggle('open');
+            mobileSubmenu.classList.toggle('open');
+        });
+    }
+
+    // ========================================
+    // NAVBAR — EFEITO SCROLL
+    // ========================================
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 100) {
+            nav.style.padding = '1rem 5%';
+            nav.style.boxShadow = '0 2px 30px rgba(0, 0, 0, 0.1)';
+        } else {
+            nav.style.padding = '1.5rem 5%';
+            nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
+        }
+    });
+</script>a
 <script>
   let lastScroll = 0;
   const filtersSection = document.querySelector('.portfolio-filters-section');

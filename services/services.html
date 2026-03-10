@@ -57,15 +57,23 @@
                 <span></span><span></span><span></span>
             </button>
         </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <ul>
-                <li><a href="/index.html#home" class="mobile-link">Home</a></li>
-                <li><a href="services.html" class="mobile-link">Serviços</a></li>
-                <li><a href="portfolio.html" class="mobile-link">Projetos</a></li>
-                <li><a href="/index.html#about" class="mobile-link">Sobre</a></li>
-                <li><a href="/index.html#contact" class="mobile-link mobile-cta">Fale Conosco</a></li>
+       <div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="/index.html#home" class="mobile-link">Home</a></li>
+        <li>
+            <a href="#" class="mobile-link" id="mobileServicesToggle">Serviços <i class="fa-solid fa-chevron-down"></i></a>
+            <ul id="mobileSubmenu" style="display: none; padding-left: 20px;">
+                <li><a href="websites.html" class="mobile-link">Websites</a></li>
+                <li><a href="mobile.html" class="mobile-link">Apps Mobile</a></li>
+                <li><a href="ecommerce.html" class="mobile-link">E-commerce</a></li>
+                <li><a href="sistemas.html" class="mobile-link">Sistemas Web</a></li>
             </ul>
-        </div>
+        </li>
+        <li><a href="portfolio.html" class="mobile-link">Projetos</a></li>
+        <li><a href="/index.html#about" class="mobile-link">Sobre</a></li>
+        <li><a href="/index.html#contact" class="mobile-link mobile-cta">Fale Conosco</a></li>
+    </ul>
+</div>
     </nav>
 
     <!-- Services Hero -->
@@ -264,39 +272,52 @@
         </div>
     </footer>
 
-   <script>
-        // Scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+<script>
+    // ========================================
+    // HAMBURGER MENU E SUBMENU
+    // ========================================
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileServicesToggle = document.getElementById('mobileServicesToggle');
+    const mobileSubmenu = document.getElementById('mobileSubmenu');
 
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    // Abre/fecha o menu principal
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileMenu.classList.toggle('open');
+    });
 
-        // Hamburger Menu
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('open');
-            mobileMenu.classList.toggle('open');
+    // Lógica do Submenu de Serviços
+    if (mobileServicesToggle && mobileSubmenu) {
+        mobileServicesToggle.addEventListener('click', (e) => {
+            e.preventDefault(); // Impede o link de navegar
+            const isHidden = mobileSubmenu.style.display === 'none';
+            mobileSubmenu.style.display = isHidden ? 'block' : 'none';
         });
+    }
 
-        document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => {
+    // Fecha o menu ao clicar em links
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Se não for o link de toggle, fecha tudo
+            if (e.target !== mobileServicesToggle) {
                 hamburger.classList.remove('open');
                 mobileMenu.classList.remove('open');
-            });
+            }
         });
+    });
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            nav.style.boxShadow = window.scrollY > 100
-                ? '0 2px 30px rgba(0,0,0,0.1)'
-                : '0 2px 20px rgba(0,0,0,0.05)';
-        });
-    </script>
+    // NAVBAR — EFEITO SCROLL
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 100) {
+            nav.style.padding = '1rem 5%';
+            nav.style.boxShadow = '0 2px 30px rgba(0, 0, 0, 0.1)';
+        } else {
+            nav.style.padding = '1.5rem 5%';
+            nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
+        }
+    });
+</script>
 </body>
 </html>

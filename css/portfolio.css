@@ -1,4 +1,25 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Mata a borda branca lateral e o scroll horizontal */
+  position: relative;
+  background: #efefef;
+}
+
+/* Garante que a Nav não crie espaços */
+nav {
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 !important;
+}
 /* Portfolio Page Specific Styles */
 .logo a {
   text-decoration: none;
