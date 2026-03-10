@@ -574,6 +574,14 @@
     flex-shrink: 0;
 }
 
+
+.dropdown-icon1 {
+    font-size: 1.1rem;
+    width: 20px !important;
+    text-align: center;
+    flex-shrink: 0;
+}
+
 /* Divider between items */
 .dropdown-item + .dropdown-item {
     border-top: 1px solid rgba(0, 0, 0, 0.05);

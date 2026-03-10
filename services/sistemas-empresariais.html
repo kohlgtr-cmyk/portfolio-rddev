@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desenvolvimento de Sistemas Empresariais — RDDev Web Solutions</title>
+  <meta name="description" content="Sistemas digitais completos para empresas. Automação, ERPs, painéis e dashboards sob medida. RCDev Web Solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="logo"><img src="/img/9.png" alt="RDDev Web Solutions" /></a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/desenvolvimento-web.html">Dev Web</a></li>
+      <li><a href="/sistemas-empresariais.html" class="active">Sistemas</a></li>
+      <li><a href="/validacao-sistemas.html">Validação</a></li>
+      <li><a href="/#contato">Contato</a></li>
+    </ul>
+    <a rel="noopener" href="https://wa.me/5554999061396?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Sistemas%20Empresariais." target="_blank" class="btn btn-gold">Solicitar Projeto</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/" onclick="closeMenu()">Home</a>
+  <a href="/desenvolvimento-web.html" onclick="closeMenu()">Desenvolvimento Web</a>
+  <a href="/sistemas-empresariais.html" onclick="closeMenu()">Sistemas Empresariais</a>
+  <a href="/validacao-sistemas.html" onclick="closeMenu()">Validação de Sistemas</a>
+  <a href="/#contato" onclick="closeMenu()">Contato</a>
+  <a href="https://wa.me/5554999061396" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:1rem; justify-content:center;">WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="grid-bg"></div>
+  <div class="hero-content fade-up">
+    <div class="badge"><span class="dot"></span> RDDev Web Solutions</div>
+    <h1>Desenvolvimento de<br /><span class="gold-text">Sistemas Empresariais</span></h1>
+    <p>Digitalize e automatize os processos da sua empresa com sistemas sob medida — desde ERPs até dashboards e painéis de controle completos.</p>
+    <div class="hero-btns">
+      <a rel="noopener" href="https://wa.me/5554999061396?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Sistemas%20Empresariais." target="_blank" class="btn btn-gold btn-xl">
+        💬 Iniciar Projeto
+      </a>
+      <a href="/#portfolio" class="btn btn-outline btn-xl">Ver Portfólio</a>
+    </div>
+    <div class="other-services">
+      <a href="/desenvolvimento-web.html">→ Desenvolvimento Web</a>
+      <a href="/validacao-sistemas.html">→ Validação de Sistemas</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-label">Soluções</span>
+      <h2>Sistemas que <span class="gold-text">automatizam e escalam</span></h2>
+      <p class="section-sub">Construímos a infraestrutura digital que a sua empresa precisa para crescer com eficiência.</p>
+    </div>
+    <div class="services-grid">
+      <div class="card fade-up">
+        <div class="card-icon">🏢</div>
+        <h3>ERP Sob Medida</h3>
+        <p>Sistemas de gestão empresarial customizados para os processos específicos do seu negócio.</p>
+        <div class="tags"><span class="tag">Gestão</span><span class="tag">Módulos</span><span class="tag">Relatórios</span></div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-icon">📊</div>
+        <h3>Dashboards & BI</h3>
+        <p>Painéis de inteligência de negócio com dados em tempo real para decisões mais rápidas e precisas.</p>
+        <div class="tags"><span class="tag">Tempo real</span><span class="tag">Gráficos</span><span class="tag">KPIs</span></div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-icon">🔗</div>
+        <h3>Integrações & APIs</h3>
+        <p>Conexão entre sistemas legados, plataformas externas e serviços de terceiros via APIs robustas.</p>
+        <div class="tags"><span class="tag">REST</span><span class="tag">Webhooks</span><span class="tag">Automação</span></div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-icon">👥</div>
+        <h3>CRM Personalizado</h3>
+        <p>Gestão de clientes, leads e funil de vendas adaptado ao seu fluxo comercial.</p>
+        <div class="tags"><span class="tag">Leads</span><span class="tag">Pipeline</span><span class="tag">Histórico</span></div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-icon">📦</div>
+        <h3>Gestão de Estoque</h3>
+        <p>Controle de inventário, movimentações, alertas e relatórios de entrada/saída em tempo real.</p>
+        <div class="tags"><span class="tag">Inventário</span><span class="tag">Alertas</span><span class="tag">NF</span></div>
+      </div>
+      <div class="card fade-up">
+        <div class="card-icon">🔐</div>
+        <h3>Portais Internos</h3>
+        <p>Sistemas de intranet e portais com autenticação, permissões por papel e acesso seguro.</p>
+        <div class="tags"><span class="tag">Auth</span><span class="tag">Roles</span><span class="tag">Seguro</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIALS -->
+<section style="padding: 2rem 2rem 5rem;">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-label">Diferenciais</span>
+      <h2>Por que escolher a <span class="gold-text">RDDev</span>?</h2>
+    </div>
+    <div class="diff-grid fade-up">
+      <div class="diff-card">
+        <span class="diff-num gold-text">20+</span>
+        <p>Sistemas e projetos entregues com sucesso</p>
+      </div>
+      <div class="diff-card">
+        <span class="diff-num gold-text">100%</span>
+        <p>Dos clientes satisfeitos com o resultado final</p>
+      </div>
+      <div class="diff-card">
+        <span class="diff-num gold-text">3+</span>
+        <p>Anos de experiência em desenvolvimento</p>
+      </div>
+      <div class="diff-card">
+        <span class="diff-num gold-text">30d</span>
+        <p>De suporte gratuito após cada entrega</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section>
+  <div class="container">
+    <div class="two-col fade-up">
+      <div>
+        <span class="section-label">Nossa Metodologia</span>
+        <h2>Do levantamento à <span class="gold-text">entrega em produção</span></h2>
+        <p style="color:var(--muted); margin-bottom:2rem;">Trabalhamos com um processo claro e colaborativo, garantindo que o sistema entregue seja exatamente o que a sua empresa precisa.</p>
+        <ul class="feature-list">
+          <li>
+            <div class="icon">📋</div>
+            <div><h4>Levantamento de requisitos</h4><p>Mapeamento completo dos processos e necessidades do negócio.</p></div>
+          </li>
+          <li>
+            <div class="icon">🎨</div>
+            <div><h4>Prototipação interativa</h4><p>Apresentamos wireframes e protótipos antes do desenvolvimento.</p></div>
+          </li>
+          <li>
+            <div class="icon">⚙️</div>
+            <div><h4>Desenvolvimento iterativo</h4><p>Entregas parciais com validação contínua do cliente.</p></div>
+          </li>
+          <li>
+            <div class="icon">🧪</div>
+            <div><h4>Testes e homologação</h4><p>QA completo antes de ir para produção.</p></div>
+          </li>
+          <li>
+            <div class="icon">🚀</div>
+            <div><h4>Deploy e treinamento</h4><p>Publicação com treinamento da equipe para uso do sistema.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="visual-card">
+        <h3>Fluxo de Desenvolvimento</h3>
+        <div class="step-flow">
+          <div class="step-item"><div class="step-dot">1</div><div><strong>Reunião Inicial</strong><p>Entendemos seu negócio e desafios</p></div></div>
+          <div class="step-item"><div class="step-dot">2</div><div><strong>Proposta Técnica</strong><p>Documento detalhado do escopo</p></div></div>
+          <div class="step-item"><div class="step-dot">3</div><div><strong>Prototipação</strong><p>Wireframes e aprovação visual</p></div></div>
+          <div class="step-item"><div class="step-dot">4</div><div><strong>Desenvolvimento</strong><p>Sprints com entregas semanais</p></div></div>
+          <div class="step-item"><div class="step-dot">5</div><div><strong>Testes & QA</strong><p>Validação funcional completa</p></div></div>
+          <div class="step-item"><div class="step-dot">6</div><div><strong>Entrega Final</strong><p>Deploy + suporte 30 dias incluso</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH -->
+<section style="padding: 3rem 2rem;">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-label">Tecnologias</span>
+      <h2>Stack robusto para <span class="gold-text">sistemas escaláveis</span></h2>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center;" class="fade-up">
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">React</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">Node.js</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">PostgreSQL</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">TypeScript</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">Prisma ORM</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">Redis</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">Docker</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">JWT Auth</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">REST API</span>
+      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">AWS / VPS</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <h2>Pronto para <span class="gold-text">digitalizar sua empresa</span>?</h2>
+      <p>Entre em contato e receba uma análise gratuita sobre as melhores soluções para o seu negócio.</p>
+      <a href="https://wa.me/5554999061396?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Sistemas%20Empresariais." target="_blank" rel="noopener" class="btn btn-gold btn-xl">
+        💬 Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="/"><img src="/img/9.png" alt="RDDev" /></a>
+  <p>© <script>document.write(new Date().getFullYear())</script> RDDev Web Solutions. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+  document.querySelectorAll('.fade-up').forEach((el, i) => {
+    el.style.transitionDelay = `${i * 0.04}s`;
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
