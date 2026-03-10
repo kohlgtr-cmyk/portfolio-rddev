@@ -170,7 +170,7 @@ const projectsData = [
     category: "portfolio",
     year: 2026,
     technologies: ["HTML", "CSS", "JavaScript"],
-    image: "img/arq.png",
+    image: "/img/arq.png",
     shortDescription: "Portfólio completo desenvolvido para apresentar o trabalho de uma arquiteta, com uma interface moderna e intuitiva para navegação e visualização dos projetos.",
     fullDescription: "A cliente Alessandra Arquiteta precisava de um portfólio completo que oferecesse uma experiência de compra simples e intuitiva, com um design moderno e responsivo.",
     challenge: "Foi preciso desenvolver um portfólio completo que oferecesse uma experiência de compra simples e intuitiva, com um design moderno e responsivo.",
