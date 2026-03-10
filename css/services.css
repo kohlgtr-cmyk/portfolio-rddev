@@ -69,12 +69,12 @@ nav {
     padding: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
+    transition: max-height 0.5s ease, padding 0.3s ease;
     z-index: 999;
 }
 
 .mobile-menu.open {
-    max-height: 600px;
+    max-height: 700px;
     padding: 1rem 0;
 }
 
@@ -527,38 +527,42 @@ nav {
     transform: translateX(-50%) translateY(0);
 }
 
-.dropdown-item {
-    display: flex; align-items: center; gap: 0.9rem;
-    padding: 0.85rem 1.4rem; color: #1a1a1a;
-    text-decoration: none; font-size: 0.92rem;
-}
+/* .dropdown-item definido na seção DROPDOWN ICONS SVG abaixo */
 
 /* ========================================
    MOBILE DROPDOWN (Ajustado)
 ======================================== */
 @media (max-width: 768px) {
+    .mobile-dropdown-item {
+        width: 100%;
+    }
+
     .mobile-service-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-right: 2rem;
+        width: 100%;
+        padding-right: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .mobile-service-row .mobile-link {
+        flex: 1;
     }
 
     .mobile-arrow-btn {
         background: none;
         border: none;
         cursor: pointer;
-        color: #4a90e2;
+        color: #4a4a4a;
         font-size: 0.85rem;
         padding: 0.4rem 0.6rem;
-        border-radius: 50%;
-        transition: all 0.3s ease;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 28px;
-        height: 28px;
-        background: rgba(74, 144, 226, 0.08);
+        flex-shrink: 0;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .mobile-arrow-btn i {
@@ -585,4 +589,58 @@ nav {
         font-size: 0.9rem !important;
         color: #4a4a4a !important;
     }
+}
+/* ========================================
+   DROPDOWN ICONS SVG
+======================================== */
+.dropdown-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    color: #4a4a4a;
+    transition: color 0.2s ease;
+}
+
+.dropdown-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+/* Força fill em todos os filhos do SVG, incluindo <g> intermediários */
+.dropdown-icon svg *[fill],
+.dropdown-icon svg g,
+.dropdown-icon svg path,
+.dropdown-icon svg circle,
+.dropdown-icon svg rect,
+.dropdown-icon svg polygon {
+    fill: currentColor !important;
+}
+
+/* Remove stroke que pode aparecer em alguns SVGs */
+.dropdown-icon svg *[stroke]:not([stroke="none"]) {
+    stroke: currentColor;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.85rem 1.4rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.92rem;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background: rgba(74, 144, 226, 0.06);
+    color: #4a90e2;
+}
+
+.dropdown-item:hover .dropdown-icon {
+    color: #4a90e2;
 }
