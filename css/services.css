@@ -43,8 +43,8 @@
     left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.98);
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 0;
     max-height: 0;
@@ -503,9 +503,8 @@
 
 .dropdown-menu {
     position: absolute;
-    top: calc(100% + 14px);
+    top: calc(100% + 6px);
     left: 50%;
-    transform: translateX(-50%);
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
@@ -518,6 +517,16 @@
     transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
     z-index: 2000;
     border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+/* Ponte invisível entre o link e o dropdown — evita que o hover quebre */
+.nav-dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
 }
 
 /* Arrow tip on top */
@@ -560,7 +569,7 @@
 
 .dropdown-icon {
     font-size: 1.1rem;
-    width: 24px;
+    width: 40px;
     text-align: center;
     flex-shrink: 0;
 }
