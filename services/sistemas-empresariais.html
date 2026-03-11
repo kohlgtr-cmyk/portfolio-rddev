@@ -4,41 +4,88 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Desenvolvimento de Sistemas Empresariais — RDDev Web Solutions</title>
-  <meta name="description" content="Sistemas digitais completos para empresas. Automação, ERPs, painéis e dashboards sob medida. RCDev Web Solutions." />
+  <meta name="description" content="Sistemas digitais completos para empresas. Automação, ERPs, painéis e dashboards sob medida. RDDev Web Solutions." />
+  <link rel="icon" type="image/png" href="https://r-d-dev.vercel.app/img/rddev.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/services.css" />
-  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/services.css" />
+  <link rel="stylesheet" href="../css/service-pages.css" />
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="/" class="logo"><img src="/img/9.png" alt="RDDev Web Solutions" /></a>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/desenvolvimento-web.html">Dev Web</a></li>
-      <li><a href="/sistemas-empresariais.html" class="active">Sistemas</a></li>
-      <li><a href="/validacao-sistemas.html">Validação</a></li>
-      <li><a href="/#contato">Contato</a></li>
-    </ul>
-    <a rel="noopener" href="https://wa.me/5554999061396?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Sistemas%20Empresariais." target="_blank" class="btn btn-gold">Solicitar Projeto</a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-  </nav>
-</header>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="/" onclick="closeMenu()">Home</a>
-  <a href="/desenvolvimento-web.html" onclick="closeMenu()">Desenvolvimento Web</a>
-  <a href="/sistemas-empresariais.html" onclick="closeMenu()">Sistemas Empresariais</a>
-  <a href="/validacao-sistemas.html" onclick="closeMenu()">Validação de Sistemas</a>
-  <a href="/#contato" onclick="closeMenu()">Contato</a>
-  <a href="https://wa.me/5554999061396" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:1rem; justify-content:center;">WhatsApp</a>
-</div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-text">RD<span>Dev</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="../index.html#home">Home</a></li>
+                <li class="nav-dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html">
+                        Serviços <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="websites.html" class="dropdown-item">
+                            <span class="dropdown-icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g><path d="M33,1.832V16.05c3.678-0.095,7.227-0.706,10.573-1.775C40.982,9.398,37.362,5.155,33,1.832z"/><path d="M46.361,15.408c2.198,4.789,3.476,10.085,3.613,15.667h14c-0.245-7.968-3.396-15.202-8.439-20.675C52.73,12.446,49.653,14.141,46.361,15.408z"/><path d="M45.479,13.606c3.095-1.175,5.99-2.748,8.638-4.646c-5.278-5.051-12.278-8.312-20.035-8.811C38.809,3.722,42.718,8.313,45.479,13.606z"/><path d="M49.975,33.075c-0.153,6.246-1.736,12.134-4.438,17.354c3.153,1.134,6.117,2.66,8.846,4.508c5.71-5.592,9.328-13.303,9.592-21.861H49.975z"/><path d="M47.975,33.075H33v15.025c3.684,0.091,7.244,0.672,10.615,1.693C46.264,44.78,47.818,39.103,47.975,33.075z"/><path d="M31,33.075H16.025c0.156,6.027,1.711,11.705,4.359,16.719c3.371-1.021,6.932-1.603,10.615-1.693V33.075z"/><path d="M33,62.318c3.844-2.929,7.113-6.569,9.609-10.731c-3.062-0.889-6.282-1.4-9.609-1.486V62.318z"/><path d="M33,31.075h14.975c-0.139-5.346-1.377-10.416-3.504-14.993C40.847,17.271,36.997,17.951,33,18.05V31.075z"/><path d="M31,18.05c-3.997-0.099-7.848-0.779-11.471-1.968c-2.127,4.577-3.365,9.647-3.504,14.993H31V18.05z"/><path d="M18.521,13.606c2.761-5.293,6.67-9.885,11.397-13.457c-7.757,0.499-14.757,3.76-20.035,8.812C12.53,10.859,15.427,12.432,18.521,13.606z"/><path d="M31,62.318V50.101c-3.327,0.086-6.548,0.598-9.609,1.486C23.887,55.749,27.156,59.391,31,62.318z"/><path d="M44.559,52.21c-2.683,4.592-6.251,8.599-10.476,11.79c7.156-0.46,13.668-3.271,18.778-7.671C50.293,54.639,47.512,53.244,44.559,52.21z"/><path d="M19.441,52.209c-2.953,1.034-5.734,2.429-8.304,4.119c5.11,4.4,11.623,7.212,18.779,7.672C25.692,60.809,22.124,56.802,19.441,52.209z"/><path d="M14.025,33.075h-14c0.264,8.559,3.882,16.27,9.592,21.861c2.729-1.848,5.692-3.374,8.846-4.508C15.762,45.209,14.179,39.321,14.025,33.075z"/><path d="M31,1.832c-4.362,3.322-7.982,7.566-10.573,12.442c3.347,1.069,6.896,1.681,10.573,1.775V1.832z"/><path d="M14.025,31.075c0.138-5.582,1.415-10.878,3.613-15.667c-3.292-1.268-6.369-2.962-9.174-5.008c-5.043,5.473-8.194,12.707-8.439,20.675H14.025z"/></g></svg></span>
+                            <span>Desenvolvimento de Sites</span>
+                        </a>
+                        <a href="mobile.html" class="dropdown-item">
+                            <span class="dropdown-icon"><svg viewBox="31 0 66 128" xmlns="http://www.w3.org/2000/svg"><path d="M94,120 C94,123.308 91.308,126 88,126 L40,126 C36.692,126 34,123.308 34,120 L34,8 C34,4.692 36.692,2 40,2 L88,2 C91.308,2 94,4.692 94,8 L94,120 Z M96,26 L96,8 C96,3.6 92.4,0 88,0 L40,0 C35.6,0 32,3.6 32,8 L32,120 C32,124.4 35.6,128 40,128 L88,128 C92.4,128 96,124.4 96,120 L96,36 C96.55,36 97,35.55 97,35 L97,27 C97,26.45 96.55,26 96,26 Z M64,123 C62.346,123 61,121.654 61,120 C61,118.346 62.346,117 64,117 C65.654,117 67,118.346 67,120 C67,121.654 65.654,123 64,123 Z"/></svg></span>
+                            <span>Aplicativos Mobile</span>
+                        </a>
+                        <a href="ecommerce.html" class="dropdown-item">
+                            <span class="dropdown-icon"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M58.5,3.5H5.5a2.006,2.006,0,0,0-2,2v53a2.006,2.006,0,0,0,2,2h53a2.006,2.006,0,0,0,2-2V5.5A2.006,2.006,0,0,0,58.5,3.5Zm0,55H5.5V14.67h53Zm0-45.83H5.5V5.5h53Z"/></svg></span>
+                            <span>E-commerce</span>
+                        </a>
+                        <a href="sistemas.html" class="dropdown-item">
+                            <span class="dropdown-icon"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M981.333333 469.333333a21.333333 21.333333 0 0 0-21.333333 21.333334v85.333333a85.333333 85.333333 0 0 1-85.333333 85.333333H149.333333a85.333333 85.333333 0 0 1-85.333333-85.333333V149.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h725.333334a85.333333 85.333333 0 0 1 85.333333 85.333333 21.333333 21.333333 0 0 0 42.666667 0 128 128 0 0 0-128-128H149.333333a128 128 0 0 0-128 128v426.666667a128 128 0 0 0 128 128h725.333334a128 128 0 0 0 128-128v-85.333333a21.333333 21.333333 0 0 0-21.333334-21.333334z"/></svg></span>
+                            <span>Sistemas Web</span>
+                        </a>
+                        <a href="validacao-sistemas.html" class="dropdown-item">
+                            <span class="dropdown-icon"><svg viewBox="0 0 258.141 258.141"><g><path d="M66.36,46.893h100.422c2.209,0,4-1.791,4-4s-1.791-4-4-4H66.36c-2.209,0-4,1.791-4,4S64.151,46.893,66.36,46.893z"/><path d="M222.917,167.082c-1.133-1.19-2.704-1.863-4.346-1.863c-0.025,0-0.05,0-0.074,0c-2.695,0-5.21-1.078-7.083-3.037c-1.908-1.995-2.883-4.611-2.747-7.368c0.081-1.641-0.514-3.243-1.646-4.433c-1.133-1.19-2.704-1.863-4.346-1.863h-3.103V6c0-3.313-2.687-6-6-6h-154c-3.313,0-6,2.687-6,6v210.617c0,3.314,2.687,6,6,6h94.546c7.439,12.401,18.374,24.604,34.43,34.616c0.972,0.606,2.073,0.909,3.175,0.909s2.203-0.303,3.175-0.909c40.553-25.287,48.524-64.542,49.666-85.69C224.651,169.893,224.056,168.279,222.917,167.082z"/></g></svg></span>
+                            <span>Validação de Sistemas</span>
+                        </a>
+                        <a href="sistemas-empresariais.html" class="dropdown-item active-page">
+                            <span class="dropdown-icon"><svg viewBox="0 0 128 128"><path d="m 22.171875,22.046877 c -3.97497,0 -7.1875,3.181281 -7.1875,7.15625 l 0,57 c 0,3.974969 3.21253,7.1875 7.1875,7.1875 l 83.687505,0 c 3.97497,0 7.15625,-3.212531 7.15625,-7.1875 l 0,-57 c 0,-3.974969 -3.18128,-7.15625 -7.15625,-7.15625 l -83.687505,0 z m 2.96875,8.21875 77.750005,0 0,54.9375 -77.750005,0 0,-54.9375 z"/></svg></span>
+                            <span>Sistemas Empresariais</span>
+                        </a>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="portfolio.html">Projetos</a></li>
+                <li><a href="../index.html#contact" class="nav-cta">Fale Conosco</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="../index.html#home" class="mobile-link">Home</a></li>
+                <li class="mobile-dropdown-item">
+                    <div class="mobile-service-row">
+                        <a href="services.html" class="mobile-link">Serviços</a>
+                        <button title="submenu" class="mobile-arrow-btn" id="mobileServicesToggle">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <ul class="mobile-submenu" id="mobileSubmenu">
+                        <li><a href="websites.html" class="mobile-link mobile-sublink">Desenvolvimento de Sites</a></li>
+                        <li><a href="mobile.html" class="mobile-link mobile-sublink">Aplicativos Mobile</a></li>
+                        <li><a href="ecommerce.html" class="mobile-link mobile-sublink">E-commerce</a></li>
+                        <li><a href="sistemas.html" class="mobile-link mobile-sublink">Sistemas Web</a></li>
+                        <li><a href="validacao-sistemas.html" class="mobile-link mobile-sublink">Validação de Sistemas</a></li>
+                        <li><a href="sistemas-empresariais.html" class="mobile-link mobile-sublink">Sistemas Empresariais</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html" class="mobile-link">Projetos</a></li>
+                <li><a href="../index.html#about" class="mobile-link">Sobre</a></li>
+                <li><a href="../index.html#contact" class="mobile-link mobile-cta">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -48,19 +95,19 @@
     <h1>Desenvolvimento de<br /><span class="gold-text">Sistemas Empresariais</span></h1>
     <p>Digitalize e automatize os processos da sua empresa com sistemas sob medida — desde ERPs até dashboards e painéis de controle completos.</p>
     <div class="hero-btns">
-      <a rel="noopener" href="https://wa.me/5554999061396?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Sistemas%20Empresariais." target="_blank" class="btn btn-gold btn-xl">
+      <a rel="noopener" href="https://wa.me/5554999061396?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Sistemas%20Empresariais." target="_blank" class="btn-xl btn-gold">
         💬 Iniciar Projeto
       </a>
-      <a href="/#portfolio" class="btn btn-outline btn-xl">Ver Portfólio</a>
+      <a href="../index.html#portfolio" class="btn-xl btn-outline">Ver Portfólio</a>
     </div>
     <div class="other-services">
-      <a href="/desenvolvimento-web.html">→ Desenvolvimento Web</a>
-      <a href="/validacao-sistemas.html">→ Validação de Sistemas</a>
+      <a href="../index.html#contact">→ Fale Conosco</a>
+      <a href="validacao-sistemas.html">→ Validação de Sistemas</a>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- SERVIÇOS -->
 <section>
   <div class="container">
     <div class="section-head fade-up">
@@ -109,8 +156,8 @@
   </div>
 </section>
 
-<!-- DIFFERENTIALS -->
-<section style="padding: 2rem 2rem 5rem;">
+<!-- DIFERENCIAIS -->
+<section style="padding: 2rem 5% 5rem;">
   <div class="container">
     <div class="section-head fade-up">
       <span class="section-label">Diferenciais</span>
@@ -137,7 +184,7 @@
   </div>
 </section>
 
-<!-- METHODOLOGY -->
+<!-- METODOLOGIA -->
 <section>
   <div class="container">
     <div class="two-col fade-up">
@@ -146,26 +193,11 @@
         <h2>Do levantamento à <span class="gold-text">entrega em produção</span></h2>
         <p style="color:var(--muted); margin-bottom:2rem;">Trabalhamos com um processo claro e colaborativo, garantindo que o sistema entregue seja exatamente o que a sua empresa precisa.</p>
         <ul class="feature-list">
-          <li>
-            <div class="icon">📋</div>
-            <div><h4>Levantamento de requisitos</h4><p>Mapeamento completo dos processos e necessidades do negócio.</p></div>
-          </li>
-          <li>
-            <div class="icon">🎨</div>
-            <div><h4>Prototipação interativa</h4><p>Apresentamos wireframes e protótipos antes do desenvolvimento.</p></div>
-          </li>
-          <li>
-            <div class="icon">⚙️</div>
-            <div><h4>Desenvolvimento iterativo</h4><p>Entregas parciais com validação contínua do cliente.</p></div>
-          </li>
-          <li>
-            <div class="icon">🧪</div>
-            <div><h4>Testes e homologação</h4><p>QA completo antes de ir para produção.</p></div>
-          </li>
-          <li>
-            <div class="icon">🚀</div>
-            <div><h4>Deploy e treinamento</h4><p>Publicação com treinamento da equipe para uso do sistema.</p></div>
-          </li>
+          <li><div class="icon">📋</div><div><h4>Levantamento de requisitos</h4><p>Mapeamento completo dos processos e necessidades do negócio.</p></div></li>
+          <li><div class="icon">🎨</div><div><h4>Prototipação interativa</h4><p>Apresentamos wireframes e protótipos antes do desenvolvimento.</p></div></li>
+          <li><div class="icon">⚙️</div><div><h4>Desenvolvimento iterativo</h4><p>Entregas parciais com validação contínua do cliente.</p></div></li>
+          <li><div class="icon">🧪</div><div><h4>Testes e homologação</h4><p>QA completo antes de ir para produção.</p></div></li>
+          <li><div class="icon">🚀</div><div><h4>Deploy e treinamento</h4><p>Publicação com treinamento da equipe para uso do sistema.</p></div></li>
         </ul>
       </div>
       <div class="visual-card">
@@ -183,24 +215,24 @@
   </div>
 </section>
 
-<!-- TECH -->
-<section style="padding: 3rem 2rem;">
+<!-- TECNOLOGIAS -->
+<section style="padding: 3rem 5%;">
   <div class="container">
     <div class="section-head fade-up">
       <span class="section-label">Tecnologias</span>
       <h2>Stack robusto para <span class="gold-text">sistemas escaláveis</span></h2>
     </div>
     <div style="display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center;" class="fade-up">
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">React</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">Node.js</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">PostgreSQL</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">TypeScript</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">Prisma ORM</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">Redis</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">Docker</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">JWT Auth</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">REST API</span>
-      <span class="tag" style="font-size:0.85rem; padding: 0.5rem 1.2rem;">AWS / VPS</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">React</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">Node.js</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">PostgreSQL</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">TypeScript</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">Prisma ORM</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">Redis</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">Docker</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">JWT Auth</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">REST API</span>
+      <span class="tag" style="font-size:0.85rem; padding:0.5rem 1.2rem;">AWS / VPS</span>
     </div>
   </div>
 </section>
@@ -211,29 +243,100 @@
     <div class="cta-banner fade-up">
       <h2>Pronto para <span class="gold-text">digitalizar sua empresa</span>?</h2>
       <p>Entre em contato e receba uma análise gratuita sobre as melhores soluções para o seu negócio.</p>
-      <a href="https://wa.me/5554999061396?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Sistemas%20Empresariais." target="_blank" rel="noopener" class="btn btn-gold btn-xl">
+      <a href="https://wa.me/5554999061396?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Sistemas%20Empresariais." target="_blank" rel="noopener" class="btn-xl btn-gold">
         💬 Falar no WhatsApp
       </a>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <a href="/"><img src="/img/9.png" alt="RDDev" /></a>
-  <p>© <script>document.write(new Date().getFullYear())</script> RDDev Web Solutions. Todos os direitos reservados.</p>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h3>RDDev</h3>
+            <p>Excelência em desenvolvimento web e mobile. Transformando ideias em soluções digitais de alto impacto.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/r_d.dev" title="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B5551994428072&text=mais+informações+sobre+desenvolvedor&type=phone_number&app_absent=0" title="WhatsApp"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Serviços</h4>
+            <ul>
+                <li><a href="websites.html">Websites</a></li>
+                <li><a href="mobile.html">Apps Mobile</a></li>
+                <li><a href="ecommerce.html">E-commerce</a></li>
+                <li><a href="sistemas-empresariais.html">Sistemas Empresariais</a></li>
+                <li><a href="validacao-sistemas.html">Validação de Sistemas</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Empresa</h4>
+            <ul>
+                <li><a href="../index.html#about">Sobre Nós</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="../index.html#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Contato</h4>
+            <ul>
+                <li><a href="https://api.whatsapp.com/send/?phone=%2B5554999061396">WhatsApp</a></li>
+                <li><a href="https://www.instagram.com/r_d.dev">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 RDDev Web Solutions. Todos os direitos reservados.</p>
+    </div>
 </footer>
 
+<script src="../js/script.js"></script>
 <script>
-  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    }
+  });
 
+  // Mobile submenu toggle
+  const mobileServicesToggle = document.getElementById('mobileServicesToggle');
+  const mobileSubmenu = document.getElementById('mobileSubmenu');
+  if (mobileServicesToggle) {
+    mobileServicesToggle.addEventListener('click', () => {
+      mobileServicesToggle.classList.toggle('open');
+      mobileSubmenu.classList.toggle('open');
+    });
+  }
+
+  // Scroll animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-
   document.querySelectorAll('.fade-up').forEach((el, i) => {
     el.style.transitionDelay = `${i * 0.04}s`;
     observer.observe(el);
+  });
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 100) {
+      nav.style.padding = '1rem 5%';
+      nav.style.boxShadow = '0 2px 30px rgba(0,0,0,0.1)';
+    } else {
+      nav.style.padding = '1.5rem 5%';
+      nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.05)';
+    }
   });
 </script>
 </body>
