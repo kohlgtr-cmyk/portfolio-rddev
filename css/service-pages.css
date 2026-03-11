@@ -518,3 +518,10 @@ footer { background: var(--dark); }
   .tl-dot { width: 40px; height: 40px; font-size: 1rem; }
   .norms-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ── Fix: garante que o mobile-menu abre corretamente ── */
+.mobile-menu.open {
+  display: block !important;
+  max-height: 700px;
+  padding: 1rem 0;
+}
