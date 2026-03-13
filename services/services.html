@@ -576,36 +576,32 @@
         </div>
     </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // ========================================
-    // 1. ANIMAÇÕES DE SCROLL (Faz as seções aparecerem)
-    // ========================================
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-    // Pega todos os elementos com a classe fade-up e aplica o observador
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-    // ========================================
-    // HAMBURGER MENU E SUBMENU
-    // ========================================
+<script src="/js/script.js"></script>
+<script>
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     const mobileServicesToggle = document.getElementById('mobileServicesToggle');
     const mobileSubmenu = document.getElementById('mobileSubmenu');
 
-    // Abre/fecha o menu principal
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('open');
         mobileMenu.classList.toggle('open');
+        if (!mobileMenu.classList.contains('open')) {
+            mobileServicesToggle.classList.remove('open');
+            mobileSubmenu.classList.remove('open');
+        }
     });
 
-    // Lógica do Submenu de Serviços
-    if (mobileServicesToggle && mobileSubmenu) {
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+            mobileServicesToggle.classList.remove('open');
+            mobileSubmenu.classList.remove('open');
+        });
+    });
+
+    if (mobileServicesToggle) {
         mobileServicesToggle.addEventListener('click', (e) => {
             e.stopPropagation();
             mobileServicesToggle.classList.toggle('open');
@@ -613,18 +609,6 @@
         });
     }
 
-    // Fecha o menu ao clicar em links
-    document.querySelectorAll('.mobile-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-            // Se não for o link de toggle, fecha tudo
-            if (e.target !== mobileServicesToggle) {
-                hamburger.classList.remove('open');
-                mobileMenu.classList.remove('open');
-            }
-        });
-    });
-
-    // NAVBAR — EFEITO SCROLL
     window.addEventListener('scroll', () => {
         const nav = document.querySelector('nav');
         if (window.scrollY > 100) {
@@ -636,6 +620,5 @@
         }
     });
 </script>
-
 </body>
 </html>
